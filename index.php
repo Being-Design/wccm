@@ -11,7 +11,6 @@
  *
  * @var bool
  */
-echo "Test message";
 define('WP_USE_THEMES', true);
 
 /** Loads the WordPress Environment and Template */
