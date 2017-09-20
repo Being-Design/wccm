@@ -11,9 +11,9 @@
  *
  * @var bool
  */
+echo "Test message";
 define('WP_USE_THEMES', true);
 
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );
 
-// echo "Yo I'm here";
