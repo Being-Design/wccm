@@ -6,3 +6,25 @@
  */
 .bb-slider-container .title {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
+
+#header-main {
+  position: fixed;
+  top: 0;
+  z-index: 1; }
+  #header-main #mastlogo {
+    height: 75px;
+    width: 100%;
+    float: none;
+    margin: 0; }
+    #header-main #mastlogo .site-title {
+      text-align: center; }
+  #header-main #masthead {
+    position: relative;
+    height: 75px; }
+
+body {
+  margin-top: 150px; }
+
+#panels #right-panel,
+#panels #left-panel {
+  margin-top: 0; }
