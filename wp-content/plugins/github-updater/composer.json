@@ -1,0 +1,30 @@
+{
+  "name": "afragen/github-updater",
+  "type": "wordpress-plugin",
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "theme",
+    "updater",
+    "install"
+  ],
+  "license": "GPLv2",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/afragen/github-updater"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Andy Fragen",
+      "email": "andy@thefragens.com",
+      "homepage": "https://thefragens.com",
+      "role": "Developer"
+    }
+  ],
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.3"
+  }
+}
