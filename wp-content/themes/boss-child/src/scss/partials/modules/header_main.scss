@@ -1,0 +1,37 @@
+$logo-height: 75px;
+$nav-height: 75px;
+
+#header-main {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+
+	#mastlogo {
+    height: $logo-height;
+    width: 100%;
+    float: none;
+    margin: 0;
+
+    .site-title {
+    	text-align: center;
+    }
+	}
+
+	#masthead {
+		position: relative;
+		height: $nav-height;
+	}
+
+}
+
+body {
+	margin-top: $logo-height + $nav-height;
+}
+
+#panels {
+
+	#right-panel,
+	#left-panel {
+		margin-top: 0;
+	}
+}

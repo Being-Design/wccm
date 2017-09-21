@@ -40,26 +40,30 @@
 
 		<div id="scroll-to"></div>
 
-		<header id="masthead" class="site-header" data-infinite="<?php echo ( boss_get_option( 'boss_activity_infinite' ) ) ? 'on' : 'off'; ?>">
-
-			<div class="header-wrap">
-				<div class="header-outher">
-					<div class="header-inner">
-						<?php get_template_part( 'template-parts/header-fluid-layout-column' ); ?>
-						<?php if( '1' == $header_style ){ ?>
-						<?php get_template_part( 'template-parts/header-middle-column' ); ?>
-						<?php } ?>
-						<?php get_template_part( 'template-parts/header-profile' ); ?>
-					</div><!-- .header-inner -->
-				</div><!-- .header-wrap -->
-			</div><!-- .header-outher -->
+		<div id="header-main">
 
 			<div id="mastlogo">
 				<?php get_template_part( 'template-parts/header-logo' ); ?>
-				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				<p class="site-description sr-only"><?php bloginfo( 'description' ); ?></p>
 			</div><!-- .mastlogo -->
 
-		</header><!-- #masthead -->
+			<header id="masthead" class="site-header clearfix" data-infinite="<?php echo ( boss_get_option( 'boss_activity_infinite' ) ) ? 'on' : 'off'; ?>">
+
+				<div class="header-wrap">
+					<div class="header-outher">
+						<div class="header-inner">
+							<?php get_template_part( 'template-parts/header-fluid-layout-column' ); ?>
+							<?php if( '1' == $header_style ) : ?>
+							<?php get_template_part( 'template-parts/header-middle-column' ); ?>
+							<?php endif; ?>
+							<?php get_template_part( 'template-parts/header-profile' ); ?>
+						</div><!-- .header-inner -->
+					</div><!-- .header-wrap -->
+				</div><!-- .header-outher -->
+
+			</header><!-- #masthead -->
+
+		</div>
 
 		<?php do_action( 'buddyboss_after_header' ); ?>
 
