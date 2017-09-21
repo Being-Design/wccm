@@ -48,16 +48,12 @@ function boss_child_theme_scripts_styles()
    * Styles
    */
   wp_enqueue_style( 'boss-child-custom', get_stylesheet_directory_uri().'/css/custom.css' );
-  wp_enqueue_style( 'boss-child-custom', get_stylesheet_directory_uri().'/css/main.css' );
+  wp_enqueue_style( 'boss-child-main', get_stylesheet_directory_uri().'/css/main.css' );
 }
 add_action( 'wp_enqueue_scripts', 'boss_child_theme_scripts_styles', 9999 );
 
 
 /****************************** CUSTOM FUNCTIONS ******************************/
-
-// Add your own custom functions here
-
-
 
 function bd_settings_menu() {
   add_theme_page('Being Design Theme Options', 'Being Design Theme Options', 'edit_theme_options', 'bd-theme-options', 'bd_theme_settings_page');
@@ -68,6 +64,20 @@ add_action('admin_menu', 'bd_settings_menu');
 //this function creates a simple page with title Custom Theme Options Page.
 function bd_theme_settings_page() { 
   ?>
+  
+  <style>
+    h4 {
+      margin-bottom: 5px;
+    }
+    p {
+      margin-top: 5px;
+    }
+    .note td {
+      padding: 0;
+      font-style: italic;
+    }
+  </style>
+
   <div class="wrap">
     <h1>Being Design Theme Options</h1>
       <form method="post" action="options.php">
@@ -77,12 +87,35 @@ function bd_theme_settings_page() {
           do_settings_sections( 'bd-options-group' );
         ?>
 
+        <h3>Global Options</h3>
+
         <table class="form-table">
-          
           <tr valign="top">
             <th scope="row">Hide Left Sidebar</th>
             <td><input type="checkbox" name="hide_left_bar" <?php if ( get_option('hide_left_bar') ) echo 'checked'; ?> value="true" /></td>
           </tr>
+        </table>
+
+        <hr />
+
+        <h3>User Profile Options</h3>
+
+        <h4>Full Width Profile View</h4>
+        <p>To remove the sidebar on the profile page, navigate to <strong>Appearance->Widgets</strong> and remove all widgets from the <strong>Member → Single Profile</strong> sidebar.</p>
+
+        <table class="form-table">
+
+          <tr valign="top">
+            <th scope="row">Use Alternate Profile Layout: </th>
+            <td><input type="checkbox" name="alternate_profile_layout" <?php if ( get_option('alternate_profile_layout') ) echo 'checked'; ?> value="true" /></td>
+          </tr>
+          <tr class="note"><td colspan="4">This option centers the profile image and title on the user profile view.</td></tr>
+
+          <tr valign="top">
+            <th scope="row">Hide Profile Stats: </th>
+            <td><input type="checkbox" name="hide_profile_stats" <?php if ( get_option('hide_profile_stats') ) echo 'checked'; ?> value="true" /></td>
+          </tr>
+          <tr class="note"><td colspan="4">This option hides numbers/stats on user profile's (Points/Friends/Followers)</td></tr>
 
           <tr valign="top">
             <th scope="row">Display User's Groups in Profile</th>
@@ -99,11 +132,12 @@ function bd_theme_settings_page() {
 }
 
 function register_bdsettings() { 
-  // whitelist options
+
+  // our custom theme options
   register_setting( 'bd-options-group', 'hide_left_bar' );
+  
+  register_setting( 'bd-options-group', 'alternate_profile_layout' );
+  register_setting( 'bd-options-group', 'hide_profile_stats' );
   register_setting( 'bd-options-group', 'display_groups_in_profile' );
-
+  
 }
-
-
-
