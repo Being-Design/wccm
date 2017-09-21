@@ -71,17 +71,25 @@ function bd_theme_settings_page() {
   <div class="wrap">
     <h1>Being Design Theme Options</h1>
       <form method="post" action="options.php">
+        
         <?php
-        settings_fields( 'bd-options-group' );
-        do_settings_sections( 'bd-options-group' );
+          settings_fields( 'bd-options-group' );
+          do_settings_sections( 'bd-options-group' );
         ?>
 
         <table class="form-table">
-              <tr valign="top">
-              <th scope="row">Hide Left Sidebar</th>
-              <td><input type="checkbox" name="hide_left_bar" <?php if ( get_option('hide_left_bar') ) echo 'checked'; ?> value="true" /></td>
-              </tr>
-          </table>
+          
+          <tr valign="top">
+            <th scope="row">Hide Left Sidebar</th>
+            <td><input type="checkbox" name="hide_left_bar" <?php if ( get_option('hide_left_bar') ) echo 'checked'; ?> value="true" /></td>
+          </tr>
+
+          <tr valign="top">
+            <th scope="row">Display User's Groups in Profile</th>
+            <td><input type="checkbox" name="display_groups_in_profile" <?php if ( get_option('display_groups_in_profile') ) echo 'checked'; ?> value="true" /></td>
+          </tr>
+
+        </table>
 
         <?php submit_button(); ?>
 
@@ -93,6 +101,7 @@ function bd_theme_settings_page() {
 function register_bdsettings() { 
   // whitelist options
   register_setting( 'bd-options-group', 'hide_left_bar' );
+  register_setting( 'bd-options-group', 'display_groups_in_profile' );
 
 }
 

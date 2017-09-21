@@ -68,7 +68,13 @@
 		<!-- #panels closed in footer-->
 		<div id="panels" class="<?php echo (boss_get_option( 'boss_adminbar' )) ? 'with-adminbar' : ''; ?>">
 
-			<?php if ( get_option('hide_left_bar') == true ) : ?>
+
+			<?php 
+			/*
+			 * BEING THEME CUSTOMIZATION:
+			 * Hide left bar in theme when option == true.
+			 */
+			if ( get_option('hide_left_bar') == true ) : ?>
 				
 				<!-- Left Panel (hidden) -->
 				<style>
