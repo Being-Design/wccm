@@ -1,4 +1,6 @@
 .header-navigation #header-menu {
+	$link-padding: 30px;
+
 	text-align: center;
 	
 	 > .horizontal-responsive-menu {
@@ -24,6 +26,7 @@
 
 			a {
 				position: relative;
+				padding: 0 $link-padding;
 				line-height: inherit;
 				color: $nav-link-color;
 				font-weight: font-weight('normal');
@@ -42,11 +45,12 @@
 
 				&:after {
 					position: absolute;
-					left: 0;
+					left: 50%;
 					top: auto;
-					bottom: 25%;
-					width: 100%;
+					bottom: 30%;
+					width: calc( 100% - #{2 * $link-padding} );
 					height: 3px;
+					@include transform( translate(-50%, 0) );
 					background-color: color('blue-fill');
 					opacity: 0;
 					transition: opacity $trans-time;

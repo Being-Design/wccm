@@ -93,6 +93,7 @@ body {
           background: linear-gradient(to top, transparent 0%, #eee 35%, #eee 100%); }
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a {
         position: relative;
+        padding: 0 30px;
         line-height: inherit;
         color: #0b5394;
         font-weight: 400; }
@@ -108,11 +109,14 @@ body {
           opacity: 1; }
         .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:after {
           position: absolute;
-          left: 0;
+          left: 50%;
           top: auto;
-          bottom: 25%;
-          width: 100%;
+          bottom: 30%;
+          width: calc( 100% - 60px);
           height: 3px;
+          -webkit-transform: translate(-50%, 0) ;
+          -ms-transform: translate(-50%, 0) ;
+          transform: translate(-50%, 0) ;
           background-color: #0b5394;
           opacity: 0;
           transition: opacity 250ms; }
