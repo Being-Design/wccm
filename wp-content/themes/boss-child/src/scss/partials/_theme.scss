@@ -1,17 +1,16 @@
+body {
+	color: color('jet');
+	font-family: $body-font;
+}
 
-// body {
-// 	color: color('jet');
-// 	font-family: $font-lato;
-// }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-// 	letter-spacing: 0.01em;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $header-font;
+}
 
 // a,
 // a:visited {

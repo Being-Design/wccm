@@ -66,9 +66,60 @@
  	filter: $val;
  }
 
+ /**
+ *  POSITIONING
+ */
+
  @mixin center-absolute() {
  	position: absolute;
+ 	left: 50%;
+ 	top: 50%;
  	@include transform( translate(-50%, -50%) );
+ }
+
+ @mixin center-margin() {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+
+ @mixin center-flex() {
+ 	@include display-flex;
+	@include align-items(center);
+	height: 100%;
+ }
+
+ @mixin clearfix() {
+ 	&:after {
+ 		content: "";
+ 		display: table;
+ 		clear: both;
+ 	}
+ }
+
+ @mixin square($size: auto) {
+ 	width: $size;
+ 	height: $size;
+ }
+
+/**
+ *  UTIL
+ */
+
+ // Copy
+
+ @mixin font-rem($rem_value) {
+ 	font-size: #{$rem_value * 10}px;
+ 	font-size: #{$rem_value}rem;
+ }
+
+ @mixin font-px($px_value) {
+ 	font-size: #{$px_value}px;
+ 	font-size: #{$px_value / 10}rem;
+ }
+
+ @mixin text-uppercase() {
+ 	text-transform: uppercase;
+ 	letter-spacing: $uppercase_letter_spacing;
  }
 
  @mixin placeholder() {
@@ -86,19 +137,7 @@
  	}
  }
 
-/**
- *  UTIL
- */
-
- @mixin font-rem($rem_value) {
- 	font-size: #{$rem_value * 10}px;
- 	font-size: #{$rem_value}rem;
- }
-
- @mixin font-px($px_value) {
- 	font-size: #{$px_value}px;
- 	font-size: #{$px_value / 10}rem;
- }
+ // Visibility
 
  @mixin autoAlpha($val, $important:"") {
  	$visibility: inherit;
@@ -109,20 +148,9 @@
  	opacity: $val #{$important};
  }
 
- @mixin gpuAccel() {
- 	@include transform(rotateX(0deg));
- }
-
- @mixin square($size: auto) {
- 	width: $size;
- 	height: $size;
- }
-
- @mixin center-absolute() {
- 	position: absolute;
- 	left: 50%;
- 	top: 50%;
- 	@include transform( translate(-50%, -50%) );
+ @mixin show($display: block) {
+ 	display: $display;
+ 	visibility: visible;
  }
 
  @mixin hide() {
@@ -141,15 +169,7 @@
  	border: 0;
  }
 
- @mixin show($display: block) {
- 	display: $display;
- 	visibility: visible;
- }
-
- @mixin text-uppercase() {
- 	text-transform: uppercase;
- 	letter-spacing: $uppercase_letter_spacing;
- }
+ // Media Queries
 
  @mixin media($breakpoint, $comparator: 'min') {
  	$offset: 0px;
@@ -167,6 +187,8 @@
  	}
  }
 
- @mixin region-card-color($color) {
- 	border-top: 4px solid color($color);
+ // Misc
+
+ @mixin gpuAccel() {
+ 	@include transform(rotateX(0deg));
  }

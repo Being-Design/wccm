@@ -1,0 +1,111 @@
+.header-navigation #header-menu {
+	text-align: center;
+	
+	 > .horizontal-responsive-menu {
+		overflow: visible;
+
+		.menu-item { // li
+			position: relative;
+			
+			& + .menu-item {
+				margin-left: -3px;
+
+				&:before {
+					content: '';
+					position: absolute;
+					display: block;
+					left: 0;
+					top: 0;
+					width: 1px;
+					height: 35%;
+					background: linear-gradient(to top,transparent 0%, color('platinum') 35%, color('platinum') 100%);
+				}
+			}
+
+			a {
+				position: relative;
+				line-height: inherit;
+				color: $nav-link-color;
+				font-weight: font-weight('normal');
+
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: -2px;
+					width: 100%;
+					height: 3px;
+					background-color: color('blue-fill');
+					transition: opacity $trans-time;
+					opacity: 1;
+				}
+
+				&:after {
+					position: absolute;
+					left: 0;
+					top: auto;
+					bottom: 25%;
+					width: 100%;
+					height: 3px;
+					background-color: color('blue-fill');
+					opacity: 0;
+					transition: opacity $trans-time;
+				}
+
+				&:hover,
+				&:active,
+				&:focus {
+
+					&:before {
+						opacity: 0;
+					}
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+
+			&.current-menu-item {
+				a:before {
+					opacity: 0;
+				}
+				a:after {
+					opacity: 1;
+				}
+			}
+
+			// custom menu colors (depend on DB)
+
+			&#menu-item-744 { // home
+				a:before,
+				a:after {
+					background-color: color('blue-fill');
+				}
+			}
+			&#menu-item-1536 { // about
+				a:before,
+				a:after {
+					background-color: color('gold-fill');
+				}
+			}
+			&#menu-item-748 { // offerings
+				a:before,
+				a:after {
+					background-color: color('teal-fill');
+				}
+			}
+			& { // resources
+				a:before,
+				a:after {
+					background-color: color('orange-fill');
+				}
+			}
+			&#menu-item-1537 { // contact
+				a:before,
+				a:after {
+					background-color: color('purple-fill');
+				}
+			}
+		}
+	} 
+}

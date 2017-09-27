@@ -3,7 +3,7 @@ global $rtl;
 $header_style = boss_get_option('boss_header');
 $boxed = boss_get_option( 'boss_layout_style' );
 
-if ( 'fluid' == $boxed || '2' == $header_style ) {
+if ( 'fluid' == $boxed || '2' == $header_style ) :
 	?>
 	<div class="<?php echo ($rtl) ? 'right-col' : 'left-col'; ?>">
 
@@ -14,16 +14,16 @@ if ( 'fluid' == $boxed || '2' == $header_style ) {
 			 * BEING THEME CUSTOMIZATION:
 			 * Hide burger menu theme when left menu is hidden
 			 */
-			if ( get_option('hide_left_bar') != true ) : ?>
+			if ( !get_option('hide_left_bar') ) : ?>
 				<div class="header-links">
-					<?php if ( !is_page_template( 'page-no-buddypanel.php' ) && !(!boss_get_option( 'boss_panel_hide' ) && !is_user_logged_in()) ) { ?>
+					<?php if ( !is_page_template( 'page-no-buddypanel.php' ) && !(!boss_get_option( 'boss_panel_hide' ) && !is_user_logged_in()) ) : ?>
 
 						<!-- Menu Button -->
 						<a href="#" class="menu-toggle icon" id="left-menu-toggle" title="<?php _e( 'Menu', 'boss' ); ?>">
 							<i class="fa fa-bars"></i>
 						</a><!--.menu-toggle-->
 
-					<?php } ?>
+					<?php endif; ?>
 
 				</div><!--.header-links-->
 			<?php endif; ?>
@@ -42,4 +42,4 @@ if ( 'fluid' == $boxed || '2' == $header_style ) {
 
 	</div><!--.left-col-->
 	<?php
-}
+endif;

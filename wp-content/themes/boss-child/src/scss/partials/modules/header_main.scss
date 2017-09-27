@@ -1,25 +1,56 @@
 $logo-height: 75px;
 $nav-height: 75px;
+$right-col-md-width: 200px;
 
 #header-main {
 	position: fixed;
 	top: 0;
 	z-index: 1;
+	width: 100%;
+	background-color: color('white');
 
 	#mastlogo {
-    height: $logo-height;
-    width: 100%;
-    float: none;
-    margin: 0;
+		height: $logo-height;
+		width: 100%;
+		float: none;
+		margin: 0;
+		box-shadow: none;
 
-    .site-title {
-    	text-align: center;
-    }
+		.site-title {
+			text-align: center;
+		}
 	}
 
 	#masthead {
 		position: relative;
 		height: $nav-height;
+		border-top: color('silver') 1px solid;
+	}
+
+	.header-outher {
+		box-shadow: none;
+		margin-left: 0;
+	}
+
+	.header-inner .right-col {
+		.register,
+		.login {
+			border-radius: $btn-border-radius;
+			background-color: $nav-link-color;
+			font-weight: font-weight('normal');
+		}
+	}
+
+	// centers nav on tablet+
+	@include media(md) {
+
+		.header-inner .left-col {
+			width: 100%;
+			padding-left: $right-col-md-width;
+		}
+		.header-inner .right-col {
+			min-width: $right-col-md-width;
+		}
 	}
 
 }
