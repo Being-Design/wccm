@@ -48,8 +48,8 @@ function boss_child_theme_scripts_styles()
    * Styles
    */
   wp_enqueue_style( 'boss-child-custom', 'https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,400|Cormorant+Garamond:400,600');
-  wp_enqueue_style( 'boss-child-custom', get_stylesheet_directory_uri().'/css/custom.css' );
-  wp_enqueue_style( 'boss-child-main', get_stylesheet_directory_uri().'/css/main.css' );
+  wp_enqueue_style( 'boss-child-custom', get_stylesheet_directory_uri().'/css/custom.css' . time() );
+  wp_enqueue_style( 'boss-child-main', get_stylesheet_directory_uri().'/css/main.css' . time() );
 }
 add_action( 'wp_enqueue_scripts', 'boss_child_theme_scripts_styles', 9999 );
 
