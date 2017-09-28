@@ -29,6 +29,9 @@ h5,
 h6 {
   font-family: "Cormorant Garamond", serif; }
 
+#content #counters {
+  background-color: #e69138; }
+
 .btn,
 a.btn {
   width: auto;
@@ -230,3 +233,13 @@ body {
       #item-header #item-header-cover #item-statistics .generic-button a {
         width: 100%;
         max-width: none; }
+
+body .entry-content #students > .vc_col-sm-12,
+body .entry-content #clients > .vc_col-sm-12,
+body .entry-content #companies > .vc_col-sm-12,
+body .entry-content #instructors > .vc_col-sm-12,
+body .entry-content #counters > .vc_col-sm-12,
+body .entry-content #shop > .vc_col-sm-12,
+body .entry-content #launch > .vc_col-sm-12,
+body .entry-content #vc-courses > .vc_col-sm-12 {
+  font-family: "Alegreya Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }

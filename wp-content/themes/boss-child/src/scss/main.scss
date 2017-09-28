@@ -12,5 +12,7 @@
 @import "partials/modules/button";
 @import "partials/modules/header_main";
 @import "partials/modules/header_menu";
-@import 'partials/modules/member_header';
+@import "partials/modules/member_header";
 
+// WP Overrides
+@import "partials/overrides/social_learner_overrides";

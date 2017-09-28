@@ -1,0 +1,16 @@
+body .entry-content {
+	
+	#students,
+	#clients,
+	#companies,
+	#instructors,
+	#counters,
+	#shop,
+	#launch,
+	#vc-courses {
+
+		> .vc_col-sm-12 {
+			font-family: $body-font;
+		}
+	}
+}
