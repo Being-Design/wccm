@@ -12,8 +12,14 @@ h6 {
 	font-family: $header-font;
 }
 
-#content #counters {
-	background-color: color('orange-fill');
+#content {
+
+	#counters {
+		background-color: color('orange-fill');
+	}
+	#clients {
+		background-color: color('purple-fill');
+	}
 }
 
 // a,
