@@ -17,3 +17,7 @@
 
 // WP Overrides
 @import "partials/overrides/social_learner_overrides";
+
+
+// HOTFIX - REMOVE
+#wpadminbar { display: none; }

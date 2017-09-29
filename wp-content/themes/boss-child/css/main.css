@@ -318,3 +318,6 @@ body .entry-content #vc-courses > .vc_col-sm-12 h4,
 body .entry-content #vc-courses > .vc_col-sm-12 h5,
 body .entry-content #vc-courses > .vc_col-sm-12 h6 {
   font-family: "Cormorant Garamond", serif; }
+
+#wpadminbar {
+  display: none; }
