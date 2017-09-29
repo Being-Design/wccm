@@ -137,17 +137,18 @@ body {
         opacity: 0; }
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item.current-menu-item a:after {
         opacity: 1; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-744 a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:after, .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-744 a:before,
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-744 a:after {
         background-color: #0b5394; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1536 a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1536 a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1592 a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1592 a:after {
         background-color: #f1c232; }
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-748 a:before,
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-748 a:after {
         background-color: #45818e; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1591 a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1591 a:after {
         background-color: #e69138; }
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1537 a:before,
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1537 a:after {

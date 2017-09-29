@@ -168,9 +168,11 @@ $boxed = boss_get_option( 'boss_layout_style' );
 
 		<?php } else { ?>
 
-            <!-- Woocommerce Notification for guest users-->
-            <!-- BD: Turned off for guest users -->
-            <?php // echo boss_cart_icon_html(); ?>
+            <?php 
+            	// Woocommerce Notification for guest users
+            	// BD: Turned off for guest users
+            	// echo boss_cart_icon_html(); 
+            ?>
 
 			<!-- Register/Login links for logged out users -->
 			<?php if ( !is_user_logged_in() && buddyboss_is_bp_active() ) : ?>
