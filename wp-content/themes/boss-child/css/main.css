@@ -65,7 +65,9 @@ a.btn {
       body.logged-in #header-main #mastlogo #logo img.large {
         display: none; }
       body.logged-in #header-main #mastlogo #logo img.small {
-        display: block !important; }
+        display: block !important;
+        max-height: 75px;
+        width: auto; }
   #header-main #masthead {
     position: relative;
     height: 75px;

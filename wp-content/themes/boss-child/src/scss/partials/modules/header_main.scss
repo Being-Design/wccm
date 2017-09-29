@@ -33,6 +33,8 @@ $nav-height: 75px;
 			}
 			#logo img.small {
 				display: block !important; // overrides a WP !important
+				max-height: $nav-height;
+				width: auto;
 			}
 		}
 	}
