@@ -70,11 +70,11 @@
  *  POSITIONING
  */
 
- @mixin center-absolute() {
+ @mixin center-absolute($transforms: '') {
  	position: absolute;
  	left: 50%;
  	top: 50%;
- 	@include transform( translate(-50%, -50%) );
+ 	@include transform( translate(-50%, -50%) $transforms );
  }
 
  @mixin center-margin() {

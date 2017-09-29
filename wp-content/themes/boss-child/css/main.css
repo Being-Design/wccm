@@ -48,7 +48,8 @@ a.btn {
   top: 0;
   z-index: 5;
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  color: #351c75; }
   #header-main #mastlogo {
     height: 75px;
     width: 100%;
@@ -72,7 +73,43 @@ a.btn {
     position: relative;
     height: 75px;
     border-top: #ccc 1px solid; }
+    #header-main #masthead #search-open {
+      background: none;
+      color: #351c75; }
+      #header-main #masthead #search-open:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(0.35) ;
+        -ms-transform: translate(-50%, -50%) scale(0.35) ;
+        transform: translate(-50%, -50%) scale(0.35) ;
+        width: 35px;
+        height: 35px;
+        background: #674ea7;
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity 250ms, transform 250ms; }
+      #header-main #masthead #search-open:hover:before {
+        opacity: 0.15;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1) ;
+        -ms-transform: translate(-50%, -50%) scale(1) ;
+        transform: translate(-50%, -50%) scale(1) ; }
+      #header-main #masthead #search-open:active:before, #header-main #masthead #search-open:focus:before {
+        opacity: 0.25;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1) ;
+        -ms-transform: translate(-50%, -50%) scale(1) ;
+        transform: translate(-50%, -50%) scale(1) ; }
+    #header-main #masthead .header-notifications {
+      color: #351c75; }
     body.logged-in #header-main #masthead {
+      border-top: none;
       float: left;
       margin-left: 75px;
       width: calc(100% - 180px); }
@@ -135,6 +172,8 @@ body {
           background-color: #0b5394;
           transition: opacity 250ms;
           opacity: 1; }
+          body.logged-in .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:before {
+            top: 0; }
         .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:after {
           position: absolute;
           left: 50%;
@@ -218,9 +257,9 @@ body {
           position: absolute;
           left: 50%;
           top: 50%;
-          -webkit-transform: translate(-50%, -50%) ;
-          -ms-transform: translate(-50%, -50%) ;
-          transform: translate(-50%, -50%) ;
+          -webkit-transform: translate(-50%, -50%)  ;
+          -ms-transform: translate(-50%, -50%) "" ;
+          transform: translate(-50%, -50%) "" ;
           float: none;
           max-width: 100%;
           width: auto;

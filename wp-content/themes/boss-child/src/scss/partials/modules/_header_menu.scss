@@ -41,6 +41,10 @@
 					background-color: color('blue-fill');
 					transition: opacity $trans-time;
 					opacity: 1;
+
+					body.logged-in & {
+						top: 0;
+					}
 				}
 
 				&:after {

@@ -10,6 +10,7 @@ $nav-height: 75px;
 	z-index: 5;
 	width: 100%;
 	background-color: color('white');
+	color: color('purple-text');
 
 	#mastlogo {
 		height: $logo-height;
@@ -44,9 +45,40 @@ $nav-height: 75px;
 		height: $nav-height;
 		border-top: color('silver') 1px solid;
 
+		#search-open {
+			background: none;
+			color: color('purple-text');
+
+			&:before {
+				content: '';
+				@include center-absolute( scale(0.35) );
+				@include square(35px);
+				background: color('purple-fill');
+				border-radius: 50%;
+				opacity: 0;
+				transition: opacity $trans-time, transform $trans-time;
+			}
+
+			&:hover:before {
+				opacity: 0.15;
+				@include center-absolute( scale(1) );
+			}
+			&:active:before,
+			&:focus:before {
+				opacity: 0.25;
+				@include center-absolute( scale(1) );
+			}
+
+		}
+
+		.header-notifications {
+			color: color('purple-text');
+		}
+
 		body.logged-in & {
 			$logo-menu-gutter: 75px;
 
+			border-top: none;
 			float: left;
 			margin-left: $logo-menu-gutter;
 			width: calc(100% - #{$logged-in-logo-width + $logo-menu-gutter});
