@@ -85,19 +85,20 @@
 			// custom menu colors (depend on DB)
 
 			&,								// default
-			&#menu-item-744 { // home
+			&#menu-item-744,
+			&#menu-item-1596 { // home/dashboard
 				a:before,
 				a:after {
 					background-color: color('blue-fill');
 				}
 			}
-			&#menu-item-1592 { // about
+			&#menu-item-748 { // courses
 				a:before,
 				a:after {
 					background-color: color('gold-fill');
 				}
 			}
-			&#menu-item-748 { // courses
+			&#menu-item-749 { // members
 				a:before,
 				a:after {
 					background-color: color('teal-fill');
