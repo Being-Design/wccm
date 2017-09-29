@@ -3,7 +3,7 @@
 
 	text-align: center;
 	
-	 > .horizontal-responsive-menu {
+	> .horizontal-responsive-menu {
 		overflow: visible;
 
 		.menu-item { // li
@@ -82,40 +82,46 @@
 				}
 			}
 
-			// custom menu colors (depend on DB)
+			// custom menu colors (cyclic)
 
-			&,								// default
-			&#menu-item-744,
-			&#menu-item-1596 { // home/dashboard
-				a:before,
-				a:after {
-					background-color: color('blue-fill');
-				}
+			// &:nth-child(5n + 1) {
+			// 	a:before,
+			// 	a:after {
+			// 		background-color: color('blue-fill');
+			// 	}
+			// }
+
+			a:before,	// default, but also first
+			a:after {
+				background-color: color('blue-fill');
 			}
-			&#menu-item-748 { // courses
+
+			&:nth-child(5n + 2) {
 				a:before,
 				a:after {
 					background-color: color('gold-fill');
 				}
 			}
-			&#menu-item-749 { // members
+			&:nth-child(5n + 3) {
 				a:before,
 				a:after {
 					background-color: color('teal-fill');
 				}
 			}
-			&#menu-item-1591 { // resources
+			&:nth-child(5n + 4) {
 				a:before,
 				a:after {
 					background-color: color('orange-fill');
 				}
 			}
-			&#menu-item-1537 { // contact
+			&:nth-child(5n + 5) {
 				a:before,
 				a:after {
 					background-color: color('purple-fill');
 				}
 			}
+
+
 		}
 	} 
 }

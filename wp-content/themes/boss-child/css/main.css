@@ -196,21 +196,19 @@ body {
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item.current-menu-item a:after {
         opacity: 1; }
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:after, .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-744 a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-744 a:after, .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1596 a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1596 a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:after {
         background-color: #0b5394; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-748 a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-748 a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 2) a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 2) a:after {
         background-color: #f1c232; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-749 a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-749 a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 3) a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 3) a:after {
         background-color: #45818e; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1591 a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1591 a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 4) a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 4) a:after {
         background-color: #e69138; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1537 a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item#menu-item-1537 a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 5) a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 5) a:after {
         background-color: #674ea7; }
 
 #item-header {
