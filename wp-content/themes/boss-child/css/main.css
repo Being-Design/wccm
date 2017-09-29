@@ -195,8 +195,8 @@ body {
         opacity: 0; }
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item.current-menu-item a:after {
         opacity: 1; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 1) a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 1) a:after {
         background-color: #0b5394; }
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 2) a:before,
       .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 2) a:after {

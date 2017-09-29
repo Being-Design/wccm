@@ -84,44 +84,26 @@
 
 			// custom menu colors (cyclic)
 
-			// &:nth-child(5n + 1) {
-			// 	a:before,
-			// 	a:after {
-			// 		background-color: color('blue-fill');
-			// 	}
-			// }
+			$menu-colors: (
+				color('blue-fill'),
+				color('gold-fill'),
+				color('teal-fill'),
+				color('orange-fill'),
+				color('purple-fill'),
+				);
 
-			a:before,	// default, but also first
-			a:after {
-				background-color: color('blue-fill');
-			}
+			$num-menu-colors: length($menu-colors);
 
-			&:nth-child(5n + 2) {
-				a:before,
-				a:after {
-					background-color: color('gold-fill');
+			@for $i from 1 through $num-menu-colors {
+
+				&:nth-child(#{$num-menu-colors}n + #{$i}) {
+					a:before,
+					a:after {
+						background-color: nth($menu-colors, $i);
+					}
 				}
 			}
-			&:nth-child(5n + 3) {
-				a:before,
-				a:after {
-					background-color: color('teal-fill');
-				}
-			}
-			&:nth-child(5n + 4) {
-				a:before,
-				a:after {
-					background-color: color('orange-fill');
-				}
-			}
-			&:nth-child(5n + 5) {
-				a:before,
-				a:after {
-					background-color: color('purple-fill');
-				}
-			}
-
-
+			
 		}
 	} 
 }
