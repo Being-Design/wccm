@@ -6,7 +6,7 @@
 	> .horizontal-responsive-menu {
 		overflow: visible;
 
-		.menu-item { // li
+		> .menu-item { // li
 			position: relative;
 			
 			& + .menu-item {
@@ -71,6 +71,7 @@
 						opacity: 1;
 					}
 				}
+
 			}
 
 			&.current-menu-item {
@@ -105,5 +106,11 @@
 			}
 			
 		}
-	} 
+
+		.hideshow {
+			a {
+				color: $nav-link-color;
+			}
+		}
+	}
 }

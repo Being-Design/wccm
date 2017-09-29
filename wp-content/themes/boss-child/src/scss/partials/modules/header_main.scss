@@ -12,6 +12,10 @@ $nav-height: 75px;
 	background-color: color('white');
 	color: color('purple-text');
 
+	@include media(xs, 'max') {
+		display: none;
+	}
+
 	#mastlogo {
 		height: $logo-height;
 		width: 100%;
@@ -80,11 +84,35 @@ $nav-height: 75px;
 
 			border-top: none;
 			float: left;
-			margin-left: $logo-menu-gutter;
-			width: calc(100% - #{$logged-in-logo-width + $logo-menu-gutter});
+			width: calc(100% - #{$logged-in-logo-width});
 
 			.left-col {
 				padding: 0;
+			}
+
+			@include media(md,'max') {
+				
+				.left-col {
+					width: auto;
+				}
+				.right-col {
+					width: auto;
+
+					.header-account-login {
+						min-width: 0;
+						padding-left: 15px;
+
+						.user-link .name {
+							@include hide;
+						}
+					}
+				}
+
+			}
+
+			@include media(md) {
+				margin-left: $logo-menu-gutter;
+				width: calc(100% - #{$logged-in-logo-width + $logo-menu-gutter});
 			}
 		}
 	}
@@ -117,11 +145,13 @@ $nav-height: 75px;
 
 }
 
-body {
-	margin-top: $logo-height + $nav-height;
+@include media(xs) {
+	body {
+		margin-top: $logo-height + $nav-height;
 
-	&.logged-in {
-		margin-top: $nav-height - 32px; // workaround?
+		&.logged-in {
+			margin-top: $nav-height;
+		}
 	}
 }
 

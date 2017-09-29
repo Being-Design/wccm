@@ -50,6 +50,9 @@ a.btn {
   width: 100%;
   background-color: #fff;
   color: #351c75; }
+  @media screen and (max-width: 479px) {
+    #header-main {
+      display: none; } }
   #header-main #mastlogo {
     height: 75px;
     width: 100%;
@@ -111,10 +114,24 @@ a.btn {
     body.logged-in #header-main #masthead {
       border-top: none;
       float: left;
-      margin-left: 75px;
-      width: calc(100% - 180px); }
+      width: calc(100% - 105px); }
       body.logged-in #header-main #masthead .left-col {
         padding: 0; }
+      @media screen and (max-width: 991px) {
+        body.logged-in #header-main #masthead .left-col {
+          width: auto; }
+        body.logged-in #header-main #masthead .right-col {
+          width: auto; }
+          body.logged-in #header-main #masthead .right-col .header-account-login {
+            min-width: 0;
+            padding-left: 15px; }
+            body.logged-in #header-main #masthead .right-col .header-account-login .user-link .name {
+              display: none;
+              visibility: hidden; } }
+      @media screen and (min-width: 992px) {
+        body.logged-in #header-main #masthead {
+          margin-left: 75px;
+          width: calc(100% - 180px); } }
   #header-main .header-outher {
     box-shadow: none;
     margin-left: 0; }
@@ -130,24 +147,37 @@ a.btn {
     #header-main .header-inner .right-col {
       min-width: 200px; } }
 
-body {
-  margin-top: 150px; }
-  body.logged-in {
-    margin-top: 43px; }
+@media screen and (min-width: 480px) {
+  body {
+    margin-top: 150px; }
+    body.logged-in {
+      margin-top: 75px; } }
 
 #panels #right-panel,
 #panels #left-panel {
   margin-top: 0; }
 
+body.is-mobile #mobile-header {
+  background-color: #333; }
+  body.is-mobile #mobile-header a {
+    color: #fff; }
+
+body.is-mobile #mobile-menu.menu-panel {
+  background-color: #674ea7; }
+  body.is-mobile #mobile-menu.menu-panel #header-menu a {
+    color: #ccc; }
+    body.is-mobile #mobile-menu.menu-panel #header-menu a:before {
+      color: #333; }
+
 .header-navigation #header-menu {
   text-align: center; }
   .header-navigation #header-menu > .horizontal-responsive-menu {
     overflow: visible; }
-    .header-navigation #header-menu > .horizontal-responsive-menu .menu-item {
+    .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item {
       position: relative; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item + .menu-item {
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item + .menu-item {
         margin-left: -3px; }
-        .header-navigation #header-menu > .horizontal-responsive-menu .menu-item + .menu-item:before {
+        .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item + .menu-item:before {
           content: '';
           position: absolute;
           display: block;
@@ -156,13 +186,13 @@ body {
           width: 1px;
           height: 35%;
           background: linear-gradient(to top, transparent 0%, #eee 35%, #eee 100%); }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a {
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a {
         position: relative;
         padding: 0 30px;
         line-height: inherit;
         color: #0b5394;
         font-weight: 400; }
-        .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:before {
+        .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:before {
           content: '';
           position: absolute;
           left: 0;
@@ -172,9 +202,9 @@ body {
           background-color: #0b5394;
           transition: opacity 250ms;
           opacity: 1; }
-          body.logged-in .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:before {
+          body.logged-in .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:before {
             top: 0; }
-        .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:after {
+        .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:after {
           position: absolute;
           left: 50%;
           top: auto;
@@ -187,29 +217,31 @@ body {
           background-color: #0b5394;
           opacity: 0;
           transition: opacity 250ms; }
-        .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:hover:before, .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:active:before, .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:focus:before {
+        .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:hover:before, .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:active:before, .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:focus:before {
           opacity: 0; }
-        .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:hover:after, .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:active:after, .header-navigation #header-menu > .horizontal-responsive-menu .menu-item a:focus:after {
+        .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:hover:after, .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:active:after, .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:focus:after {
           opacity: 1; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item.current-menu-item a:before {
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item.current-menu-item a:before {
         opacity: 0; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item.current-menu-item a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item.current-menu-item a:after {
         opacity: 1; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 1) a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 1) a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 1) a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 1) a:after {
         background-color: #0b5394; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 2) a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 2) a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 2) a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 2) a:after {
         background-color: #f1c232; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 3) a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 3) a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 3) a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 3) a:after {
         background-color: #45818e; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 4) a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 4) a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 4) a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 4) a:after {
         background-color: #e69138; }
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 5) a:before,
-      .header-navigation #header-menu > .horizontal-responsive-menu .menu-item:nth-child(5n + 5) a:after {
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 5) a:before,
+      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 5) a:after {
         background-color: #674ea7; }
+    .header-navigation #header-menu > .horizontal-responsive-menu .hideshow a {
+      color: #0b5394; }
 
 #item-header {
   min-height: 0; }
@@ -375,6 +407,3 @@ body .entry-content #vc-courses > .vc_col-sm-12 h4,
 body .entry-content #vc-courses > .vc_col-sm-12 h5,
 body .entry-content #vc-courses > .vc_col-sm-12 h6 {
   font-family: "Cormorant Garamond", serif; }
-
-#wpadminbar {
-  display: none; }

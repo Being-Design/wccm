@@ -11,13 +11,11 @@
 // Modules
 @import "partials/modules/button";
 @import "partials/modules/header_main";
+@import "partials/modules/mobile_header";
+@import "partials/modules/mobile_menu";
 @import "partials/modules/header_menu";
 @import "partials/modules/member_header";
 @import "partials/modules/footer";
 
 // WP Overrides
 @import "partials/overrides/social_learner_overrides";
-
-
-// HOTFIX - REMOVE
-#wpadminbar { display: none; }
