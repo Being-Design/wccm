@@ -157,9 +157,13 @@ a.btn {
 #panels #left-panel {
   margin-top: 0; }
 
-#panels.bd-hide-left-bar #right-panel #right-panel-inner {
+body.bd-hide-left-bar #panels #right-panel #right-panel-inner {
   width: 100%;
   margin-left: 0; }
+
+body.bd-hide-left-bar:not(.is-mobile) #panels #left-panel {
+  display: none;
+  visibility: hidden; }
 
 body.is-mobile #mobile-menu.menu-panel,
 body.is-mobile #left-panel.menu-panel {

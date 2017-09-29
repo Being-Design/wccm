@@ -1,6 +1,6 @@
 #panels {
 	
-	&.bd-hide-left-bar {
+	body.bd-hide-left-bar & {
 
 		#right-panel {
 
@@ -10,6 +10,12 @@
 			}
 		}
 	}
+
+	body.bd-hide-left-bar:not(.is-mobile) & {
+		#left-panel {
+			@include hide;
+		}
+	}	
 }
 
 body.is-mobile {
