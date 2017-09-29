@@ -67,72 +67,72 @@ function bd_theme_settings_page() {
   ?>
   
   <style>
-    h4 {
-      margin-bottom: 5px;
-    }
-    p {
-      margin-top: 5px;
-    }
-    .note td {
-      padding: 0;
-      font-style: italic;
-    }
-  </style>
+  h4 {
+    margin-bottom: 5px;
+  }
+  p {
+    margin-top: 5px;
+  }
+  .note td {
+    padding: 0;
+    font-style: italic;
+  }
+</style>
 
-  <div class="wrap">
-    <h1>Being Design Theme Options</h1>
-      <form method="post" action="options.php">
-        
-        <?php
-          settings_fields( 'bd-options-group' );
-          do_settings_sections( 'bd-options-group' );
-        ?>
+<div class="wrap">
+  <h1>Being Design Theme Options</h1>
+  <form method="post" action="options.php">
 
-        <h3>Global Options</h3>
+    <?php
+    settings_fields( 'bd-options-group' );
+    do_settings_sections( 'bd-options-group' );
+    ?>
 
-        <table class="form-table">
-          <tr valign="top">
-            <th scope="row">Hide Left Sidebar</th>
-            <td><input type="checkbox" name="hide_left_bar" <?php if ( get_option('hide_left_bar') ) echo 'checked'; ?> value="true" /></td>
-          </tr>
-        </table>
+    <h3>Global Options</h3>
 
-        <hr />
+    <table class="form-table">
+      <tr valign="top">
+        <th scope="row">Hide Left Sidebar</th>
+        <td><input type="checkbox" name="hide_left_bar" <?php if ( get_option('hide_left_bar') ) echo 'checked'; ?> value="true" /></td>
+      </tr>
+    </table>
 
-        <h3>User Profile Options</h3>
+    <hr />
 
-        <h4>Full Width Profile View</h4>
-        <p>To remove the sidebar on the profile page, navigate to <strong>Appearance->Widgets</strong> and remove all widgets from the <strong>Member → Single Profile</strong> sidebar.</p>
+    <h3>User Profile Options</h3>
 
-        <table class="form-table">
+    <h4>Full Width Profile View</h4>
+    <p>To remove the sidebar on the profile page, navigate to <strong>Appearance->Widgets</strong> and remove all widgets from the <strong>Member → Single Profile</strong> sidebar.</p>
 
-          <tr valign="top">
-            <th scope="row">Use Alternate Profile Layout: </th>
-            <td><input type="checkbox" name="alternate_profile_layout" <?php if ( get_option('alternate_profile_layout') ) echo 'checked'; ?> value="true" /></td>
-          </tr>
-          <tr class="note"><td colspan="4">This option centers the profile image and title on the user profile view.</td></tr>
+    <table class="form-table">
 
-          <tr valign="top">
-            <th scope="row">Hide Profile Stats: </th>
-            <td><input type="checkbox" name="hide_profile_stats" <?php if ( get_option('hide_profile_stats') ) echo 'checked'; ?> value="true" /></td>
-          </tr>
-          <tr class="note"><td colspan="4">This option hides numbers/stats on user profile's (Points/Friends/Followers)</td></tr>
+      <tr valign="top">
+        <th scope="row">Use Alternate Profile Layout: </th>
+        <td><input type="checkbox" name="alternate_profile_layout" <?php if ( get_option('alternate_profile_layout') ) echo 'checked'; ?> value="true" /></td>
+      </tr>
+      <tr class="note"><td colspan="4">This option centers the profile image and title on the user profile view.</td></tr>
 
-          <tr valign="top">
-            <th scope="row">Display User's Groups in Profile</th>
-            <td><input type="checkbox" name="display_groups_in_profile" <?php if ( get_option('display_groups_in_profile') ) echo 'checked'; ?> value="true" /></td>
-          </tr>
+      <tr valign="top">
+        <th scope="row">Hide Profile Stats: </th>
+        <td><input type="checkbox" name="hide_profile_stats" <?php if ( get_option('hide_profile_stats') ) echo 'checked'; ?> value="true" /></td>
+      </tr>
+      <tr class="note"><td colspan="4">This option hides numbers/stats on user profile's (Points/Friends/Followers)</td></tr>
 
-        </table>
+      <tr valign="top">
+        <th scope="row">Display User's Groups in Profile</th>
+        <td><input type="checkbox" name="display_groups_in_profile" <?php if ( get_option('display_groups_in_profile') ) echo 'checked'; ?> value="true" /></td>
+      </tr>
 
-        <?php submit_button(); ?>
+    </table>
 
-      </form>
-  </div>
-  <?php
+    <?php submit_button(); ?>
+
+  </form>
+</div>
+<?php
 }
 
-function register_bdsettings() { 
+function register_bdsettings() {
 
   // our custom theme options
   register_setting( 'bd-options-group', 'hide_left_bar' );
@@ -141,4 +141,12 @@ function register_bdsettings() {
   register_setting( 'bd-options-group', 'hide_profile_stats' );
   register_setting( 'bd-options-group', 'display_groups_in_profile' );
   
+}
+
+
+// Add any custom settings to body class
+add_filter('body_class', 'bdsettings_body_classes');
+function bdsettings_body_classes($classes) {
+  $classes[] = get_option('hide_left_bar') ? 'bd-hide-left-bar' : '';
+  return $classes;
 }

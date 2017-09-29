@@ -28,3 +28,7 @@
 // .list-inline > .row {
 // 	display: block;
 // }
+
+body.bd-hide-left-bar #right-panel-inner {
+	margin-left: 0;
+}
