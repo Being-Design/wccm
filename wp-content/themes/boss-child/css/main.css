@@ -157,17 +157,63 @@ a.btn {
 #panels #left-panel {
   margin-top: 0; }
 
+#panels.bd-hide-left-bar #right-panel #right-panel-inner {
+  width: 100%;
+  margin-left: 0; }
+
+body.is-mobile #mobile-menu.menu-panel,
+body.is-mobile #left-panel.menu-panel {
+  background-color: #674ea7; }
+  body.is-mobile #mobile-menu.menu-panel #header-menu a,
+  body.is-mobile #mobile-menu.menu-panel #left-panel-inner a,
+  body.is-mobile #left-panel.menu-panel #header-menu a,
+  body.is-mobile #left-panel.menu-panel #left-panel-inner a {
+    color: #ccc; }
+    body.is-mobile #mobile-menu.menu-panel #header-menu a:before,
+    body.is-mobile #mobile-menu.menu-panel #left-panel-inner a:before,
+    body.is-mobile #left-panel.menu-panel #header-menu a:before,
+    body.is-mobile #left-panel.menu-panel #left-panel-inner a:before {
+      color: #333; }
+    body.is-mobile #mobile-menu.menu-panel #header-menu a, body.is-mobile #mobile-menu.menu-panel #header-menu a:before,
+    body.is-mobile #mobile-menu.menu-panel #left-panel-inner a,
+    body.is-mobile #mobile-menu.menu-panel #left-panel-inner a:before,
+    body.is-mobile #left-panel.menu-panel #header-menu a,
+    body.is-mobile #left-panel.menu-panel #header-menu a:before,
+    body.is-mobile #left-panel.menu-panel #left-panel-inner a,
+    body.is-mobile #left-panel.menu-panel #left-panel-inner a:before {
+      transition: color 250ms; }
+    body.is-mobile #mobile-menu.menu-panel #header-menu a:hover, body.is-mobile #mobile-menu.menu-panel #header-menu a:focus, body.is-mobile #mobile-menu.menu-panel #header-menu a:active,
+    body.is-mobile #mobile-menu.menu-panel #left-panel-inner a:hover,
+    body.is-mobile #mobile-menu.menu-panel #left-panel-inner a:focus,
+    body.is-mobile #mobile-menu.menu-panel #left-panel-inner a:active,
+    body.is-mobile #left-panel.menu-panel #header-menu a:hover,
+    body.is-mobile #left-panel.menu-panel #header-menu a:focus,
+    body.is-mobile #left-panel.menu-panel #header-menu a:active,
+    body.is-mobile #left-panel.menu-panel #left-panel-inner a:hover,
+    body.is-mobile #left-panel.menu-panel #left-panel-inner a:focus,
+    body.is-mobile #left-panel.menu-panel #left-panel-inner a:active {
+      color: #fff; }
+      body.is-mobile #mobile-menu.menu-panel #header-menu a:hover:before, body.is-mobile #mobile-menu.menu-panel #header-menu a:focus:before, body.is-mobile #mobile-menu.menu-panel #header-menu a:active:before,
+      body.is-mobile #mobile-menu.menu-panel #left-panel-inner a:hover:before,
+      body.is-mobile #mobile-menu.menu-panel #left-panel-inner a:focus:before,
+      body.is-mobile #mobile-menu.menu-panel #left-panel-inner a:active:before,
+      body.is-mobile #left-panel.menu-panel #header-menu a:hover:before,
+      body.is-mobile #left-panel.menu-panel #header-menu a:focus:before,
+      body.is-mobile #left-panel.menu-panel #header-menu a:active:before,
+      body.is-mobile #left-panel.menu-panel #left-panel-inner a:hover:before,
+      body.is-mobile #left-panel.menu-panel #left-panel-inner a:focus:before,
+      body.is-mobile #left-panel.menu-panel #left-panel-inner a:active:before {
+        color: #ccc; }
+  body.is-mobile #mobile-menu.menu-panel #header-menu .dropdown .ab-sub-wrapper,
+  body.is-mobile #mobile-menu.menu-panel #left-panel-inner .dropdown .ab-sub-wrapper,
+  body.is-mobile #left-panel.menu-panel #header-menu .dropdown .ab-sub-wrapper,
+  body.is-mobile #left-panel.menu-panel #left-panel-inner .dropdown .ab-sub-wrapper {
+    background-color: #333; }
+
 body.is-mobile #mobile-header {
   background-color: #333; }
   body.is-mobile #mobile-header a {
     color: #fff; }
-
-body.is-mobile #mobile-menu.menu-panel {
-  background-color: #674ea7; }
-  body.is-mobile #mobile-menu.menu-panel #header-menu a {
-    color: #ccc; }
-    body.is-mobile #mobile-menu.menu-panel #header-menu a:before {
-      color: #333; }
 
 .header-navigation #header-menu {
   text-align: center; }

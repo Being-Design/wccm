@@ -78,20 +78,10 @@
 			 * BEING THEME CUSTOMIZATION:
 			 * Hide left bar in theme when option == true.
 			 */
-			if ( get_option('hide_left_bar') == true ) : ?>
-				
-				<!-- Left Panel (hidden) -->
-				<style>
-					#right-panel-inner {
-						width: 100%;
-    					margin-left: 0;
-					}
-				</style>
-
-			<?php else: ?>
+			//if ( get_option('hide_left_bar') == true ) : ?>
 				<!-- Left Panel -->
 				<?php get_template_part( 'template-parts/left-panel' ); ?>
-			<?php endif; ?>
+			<?php //endif; ?>
 
 			<!-- Left Mobile Menu -->
 			<?php get_template_part( 'template-parts/left-mobile-menu' ); ?>

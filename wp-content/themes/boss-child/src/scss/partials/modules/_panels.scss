@@ -1,0 +1,51 @@
+#panels {
+	
+	&.bd-hide-left-bar {
+
+		#right-panel {
+
+			#right-panel-inner {
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+body.is-mobile {
+
+	#mobile-menu.menu-panel,
+	#left-panel.menu-panel {
+		background-color: color('purple-fill');
+
+		#header-menu,
+		#left-panel-inner {
+			a {
+				color: color('silver');
+
+				&:before {
+					color: color('jet');
+				}
+
+				&,
+				&:before {
+					transition: color $trans-time;
+				}
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: color('white');
+
+					&:before {
+						color: color('silver');
+					}
+				}
+			}
+
+			.dropdown .ab-sub-wrapper {
+				background-color: color('jet');
+			}
+		}
+	}
+}
