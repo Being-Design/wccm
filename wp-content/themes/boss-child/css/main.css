@@ -57,10 +57,25 @@ a.btn {
     box-shadow: none; }
     #header-main #mastlogo .site-title {
       text-align: center; }
+    body.logged-in #header-main #mastlogo {
+      display: inline-block;
+      float: left;
+      width: 105px;
+      padding: 5px 18px; }
+      body.logged-in #header-main #mastlogo #logo img.large {
+        display: none; }
+      body.logged-in #header-main #mastlogo #logo img.small {
+        display: block !important; }
   #header-main #masthead {
     position: relative;
     height: 75px;
     border-top: #ccc 1px solid; }
+    body.logged-in #header-main #masthead {
+      float: left;
+      margin-left: 75px;
+      width: calc(100% - 180px); }
+      body.logged-in #header-main #masthead .left-col {
+        padding: 0; }
   #header-main .header-outher {
     box-shadow: none;
     margin-left: 0; }
@@ -78,6 +93,8 @@ a.btn {
 
 body {
   margin-top: 150px; }
+  body.logged-in {
+    margin-top: 43px; }
 
 #panels #right-panel,
 #panels #left-panel {

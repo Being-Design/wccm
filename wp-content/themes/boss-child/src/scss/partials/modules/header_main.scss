@@ -1,8 +1,10 @@
 $logo-height: 75px;
 $nav-height: 75px;
-$right-col-md-width: 200px;
 
 #header-main {
+	$right-col-md-width: 200px;
+	$logged-in-logo-width: 105px;
+
 	position: fixed;
 	top: 0;
 	z-index: 5;
@@ -19,12 +21,38 @@ $right-col-md-width: 200px;
 		.site-title {
 			text-align: center;
 		}
+
+		body.logged-in & {
+			display: inline-block;
+			float: left;
+			width: $logged-in-logo-width;
+			padding: 5px 18px;
+
+			#logo img.large {
+				display: none;
+			}
+			#logo img.small {
+				display: block !important; // overrides a WP !important
+			}
+		}
 	}
 
 	#masthead {
 		position: relative;
 		height: $nav-height;
 		border-top: color('silver') 1px solid;
+
+		body.logged-in & {
+			$logo-menu-gutter: 75px;
+
+			float: left;
+			margin-left: $logo-menu-gutter;
+			width: calc(100% - #{$logged-in-logo-width + $logo-menu-gutter});
+
+			.left-col {
+				padding: 0;
+			}
+		}
 	}
 
 	.header-outher {
@@ -57,6 +85,10 @@ $right-col-md-width: 200px;
 
 body {
 	margin-top: $logo-height + $nav-height;
+
+	&.logged-in {
+		margin-top: $nav-height - 32px; // workaround?
+	}
 }
 
 #panels {

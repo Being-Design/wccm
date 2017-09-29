@@ -67,7 +67,9 @@ $boxed = boss_get_option( 'boss_layout_style' );
 					<?php } ?>
 						</div>
 					</div>
-				</div><?php
+				</div>
+
+				<?php
 			}
 
 			if ( buddyboss_is_bp_active() && bp_is_active( 'notifications' ) ):
@@ -118,8 +120,11 @@ $boxed = boss_get_option( 'boss_layout_style' );
 
 			<?php endif; ?>
 
-            <!-- Woocommerce Notification -->
-            <?php echo boss_cart_icon_html(); ?>
+            <?php 
+            	// Woocommerce Notification
+            	// BD - turning off
+            	// echo boss_cart_icon_html(); 
+          	?>
 
 			<?php if ( buddyboss_is_bp_active() ) { ?>
 
