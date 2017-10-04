@@ -1,0 +1,27 @@
+#buddypress div#item-nav {
+	margin-bottom: 35px;
+
+	#object-nav {
+		background-color: color('snow');
+		box-shadow: 0 4px 4px rgba( color('black'), 0.25);
+
+		ul li {
+			border: none;
+
+			a,
+			a:visited {
+				padding: 16px 20px;
+				color: color('purple-text');
+				font-weight: font-weight('light');
+			}
+
+			&.current.selected,
+			a:hover,
+			a:focus,
+			a:active {
+				background-color: color('gray-light');
+				border: none;
+			}
+		} 
+	}
+}

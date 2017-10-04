@@ -1,0 +1,38 @@
+.learndash {
+
+	a {
+		color: color('purple-text');
+	}
+
+	#learndash_course_materials {
+
+		a {
+			font-weight: font-weight('bold');
+		}
+	}
+
+	#learndash_course_content {
+
+		#lessons_list h4 {
+			font-weight: font-weight('bold');
+			@include font-px(21.5);
+		}
+
+		.lesson-meta {
+			color: color('purple-text');
+		}
+
+		.learndash_topic_dots a {
+			font-weight: font-weight('normal');
+			@include font-px(16);
+		}
+
+		.notcompleted,
+		.topic-notcompleted {
+
+			&:before {
+				color: color('ink')
+			}
+		}
+	}
+}

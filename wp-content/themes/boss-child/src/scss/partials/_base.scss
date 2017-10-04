@@ -3,12 +3,12 @@
 	text-shadow: 0 0 4px rgba(color('black'), 0.5);
 }
 
-// html {
-// 	font-size: 62.5%; 
-// }
-// body {
-// 	@include font-px(14);
-// }
+html {
+	font-size: 62.5% !important; // override WP
+}
+body {
+	@include font-px(14);
+}
 
 // h1,
 // h2,

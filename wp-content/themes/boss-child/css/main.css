@@ -13,6 +13,13 @@
 .bb-slider-container .title {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
 
+html {
+  font-size: 62.5% !important; }
+
+body {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
 .center-margin {
   margin-left: auto;
   margin-right: auto; }
@@ -39,7 +46,8 @@ h6 {
   background-color: #674ea7; }
 
 .btn,
-a.btn {
+a.btn,
+a.button {
   width: auto;
   border-radius: 9001px; }
 
@@ -379,6 +387,55 @@ body.is-mobile #mobile-header {
       #item-header #item-header-cover #item-statistics .generic-button a {
         width: 100%;
         max-width: none; }
+
+.course-header .progress-wrap {
+  color: #ccc; }
+  .course-header .progress-wrap .course_progress {
+    background-color: #ccc; }
+    .course-header .progress-wrap .course_progress .course_progress_blue {
+      background-color: #e69138; }
+
+#buddypress div#item-nav {
+  margin-bottom: 35px; }
+  #buddypress div#item-nav #object-nav {
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+    #buddypress div#item-nav #object-nav ul li {
+      border: none; }
+      #buddypress div#item-nav #object-nav ul li a,
+      #buddypress div#item-nav #object-nav ul li a:visited {
+        padding: 16px 20px;
+        color: #351c75;
+        font-weight: 300; }
+      #buddypress div#item-nav #object-nav ul li.current.selected,
+      #buddypress div#item-nav #object-nav ul li a:hover,
+      #buddypress div#item-nav #object-nav ul li a:focus,
+      #buddypress div#item-nav #object-nav ul li a:active {
+        background-color: #d9d9d9;
+        border: none; }
+
+.learndash a {
+  color: #351c75; }
+
+.learndash #learndash_course_materials a {
+  font-weight: 700; }
+
+.learndash #learndash_course_content #lessons_list h4 {
+  font-weight: 700;
+  font-size: 21.5px;
+  font-size: 2.15rem; }
+
+.learndash #learndash_course_content .lesson-meta {
+  color: #351c75; }
+
+.learndash #learndash_course_content .learndash_topic_dots a {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.learndash #learndash_course_content .notcompleted:before,
+.learndash #learndash_course_content .topic-notcompleted:before {
+  color: #140b31; }
 
 #colophon .widget-area .widget .textwidget {
   color: #fff; }

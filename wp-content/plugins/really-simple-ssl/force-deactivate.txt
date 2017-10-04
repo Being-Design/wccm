@@ -23,10 +23,10 @@
   require_once(ABSPATH.'wp-admin/includes/plugin.php');
   $core_plugin = 'really-simple-ssl/rlrsssl-really-simple-ssl.php';
 
-  if (!is_plugin_active($core_plugin) ) {
-    echo "<h1>Really Simple SSL is already deactivated!</h1>";
-    exit;
-  }
+  // if (!is_plugin_active($core_plugin) ) {
+  //   echo "<h1>Really Simple SSL is already deactivated!</h1>";
+  //   exit;
+  // }
 
   #Load plugin functionality
   require_once( dirname( __FILE__ ) .  '/class-front-end.php' );
