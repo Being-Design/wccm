@@ -1,6 +1,6 @@
 // PATHS
-$path_fonts: '../../fonts';
-$path_images: '../../images';
+$path-fonts: '../../fonts';
+$path-images: '../../images';
 
 
 // COLORS
@@ -20,8 +20,10 @@ $palette: (
 	'gold-fill':			#f1c232,
 	'teal-fill':			#45818e,
 	'orange-fill':		#e69138,
-	'purple-fill':		#674ea7,
-	'purple-text':		#351c75,
+	'purple-fill':		#351c75,
+	'purple-text':		#20124d,
+	'purple-light':		#674ea7,
+	'terra-cotta':		#b74e44,
 	);
 
 
@@ -69,6 +71,14 @@ $header-font: $font-cormorant-garamond;
 $uppercase_letter_spacing: 0.075em !default;
 
 // colors
+$theme-color: color('purple-fill') !default;
+$theme-dark: color('purple-text') !default;
+$theme-text: color('jet') !default;
+$theme-accent: color('gold-fill') !default;
+$highlight1: color('orange-fill') !default;
+$highlight2: color('gold-fill') !default;
+$link-color: color('terra-cotta') !default;
+$link-hover: darken(color('terra-cotta'), 15%) !default;
 $nav-link-color: color('blue-fill') !default;
 
 // block elements
@@ -77,3 +87,4 @@ $btn-border-radius: 9001px !default;
 
 // misc
 $trans-time: 250ms !default;
+$box-shadow:  0 4px 4px rgba( color('black'), 0.25);

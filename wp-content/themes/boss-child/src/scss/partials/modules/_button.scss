@@ -1,7 +1,18 @@
 .btn,
 a.btn,
-a.button {
+a.button,
+#cs-content .x-btn {
 	width: auto;
+	border: $theme-color 2px solid;
+	background: transparent;
+	text-decoration: none;
+	transition: border-color $trans-time;
 
 	border-radius: $btn-border-radius;
+
+	&:hover,
+	&:focus,
+	&:active {
+		border-color: $theme-accent;
+	}
 }

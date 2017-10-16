@@ -64,9 +64,9 @@
 				&:active,
 				&:focus {
 
-					&:before {
-						opacity: 0;
-					}
+					// &:before {
+					// 	opacity: 0;
+					// }
 					&:after {
 						opacity: 1;
 					}
@@ -75,9 +75,9 @@
 			}
 
 			&.current-menu-item {
-				a:before {
-					opacity: 0;
-				}
+				// a:before {
+				// 	opacity: 0;
+				// }
 				a:after {
 					opacity: 1;
 				}

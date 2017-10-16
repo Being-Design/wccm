@@ -3,7 +3,7 @@
 
 	#object-nav {
 		background-color: color('snow');
-		box-shadow: 0 4px 4px rgba( color('black'), 0.25);
+		box-shadow: $box-shadow;
 
 		ul li {
 			border: none;
@@ -11,7 +11,7 @@
 			a,
 			a:visited {
 				padding: 16px 20px;
-				color: color('purple-text');
+				color: $theme-color;
 				font-weight: font-weight('light');
 			}
 

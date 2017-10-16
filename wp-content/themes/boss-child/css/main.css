@@ -39,17 +39,39 @@ h5,
 h6 {
   font-family: "Cormorant Garamond", serif; }
 
-#content #counters {
-  background-color: #e69138; }
-
+#content #counters,
 #content #clients {
-  background-color: #674ea7; }
+  background-color: #351c75; }
+
+a {
+  color: #b74e44;
+  font-weight: inherit; }
+  a:focus, a:hover, a:active {
+    color: #7f362f; }
+  #page a {
+    text-decoration: underline; }
 
 .btn,
 a.btn,
-a.button {
+a.button,
+#cs-content .x-btn {
   width: auto;
+  border: #351c75 2px solid;
+  background: transparent;
+  text-decoration: none;
+  transition: border-color 250ms;
   border-radius: 9001px; }
+  .btn:hover, .btn:focus, .btn:active,
+  a.btn:hover,
+  a.btn:focus,
+  a.btn:active,
+  a.button:hover,
+  a.button:focus,
+  a.button:active,
+  #cs-content .x-btn:hover,
+  #cs-content .x-btn:focus,
+  #cs-content .x-btn:active {
+    border-color: #f1c232; }
 
 #header-main {
   position: fixed;
@@ -97,7 +119,7 @@ a.button {
         transform: translate(-50%, -50%) scale(0.35) ;
         width: 35px;
         height: 35px;
-        background: #674ea7;
+        background: #351c75;
         border-radius: 50%;
         opacity: 0;
         transition: opacity 250ms, transform 250ms; }
@@ -118,7 +140,7 @@ a.button {
         -ms-transform: translate(-50%, -50%) scale(1) ;
         transform: translate(-50%, -50%) scale(1) ; }
     #header-main #masthead .header-notifications {
-      color: #351c75; }
+      color: #20124d; }
     body.logged-in #header-main #masthead {
       border-top: none;
       float: left;
@@ -175,7 +197,7 @@ body.bd-hide-left-bar:not(.is-mobile) #panels #left-panel {
 
 body.is-mobile #mobile-menu.menu-panel,
 body.is-mobile #left-panel.menu-panel {
-  background-color: #674ea7; }
+  background-color: #351c75; }
   body.is-mobile #mobile-menu.menu-panel #header-menu a,
   body.is-mobile #mobile-menu.menu-panel #left-panel-inner a,
   body.is-mobile #left-panel.menu-panel #header-menu a,
@@ -275,12 +297,8 @@ body.is-mobile #mobile-header {
           background-color: #0b5394;
           opacity: 0;
           transition: opacity 250ms; }
-        .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:hover:before, .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:active:before, .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:focus:before {
-          opacity: 0; }
         .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:hover:after, .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:active:after, .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a:focus:after {
           opacity: 1; }
-      .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item.current-menu-item a:before {
-        opacity: 0; }
       .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item.current-menu-item a:after {
         opacity: 1; }
       .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 1) a:before,
@@ -297,7 +315,7 @@ body.is-mobile #mobile-header {
         background-color: #e69138; }
       .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 5) a:before,
       .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item:nth-child(5n + 5) a:after {
-        background-color: #674ea7; }
+        background-color: #351c75; }
     .header-navigation #header-menu > .horizontal-responsive-menu .hideshow a {
       color: #0b5394; }
 
@@ -425,8 +443,9 @@ body.is-mobile #mobile-header {
   font-size: 21.5px;
   font-size: 2.15rem; }
 
-.learndash #learndash_course_content .lesson-meta {
-  color: #351c75; }
+.learndash #learndash_course_content #learndash_lessons .lesson-meta,
+.learndash #learndash_course_content #learndash_lessons .lesson-meta .drop-list:before {
+  color: #20124d; }
 
 .learndash #learndash_course_content .learndash_topic_dots a {
   font-weight: 400;

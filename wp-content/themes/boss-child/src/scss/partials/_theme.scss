@@ -1,5 +1,5 @@
 body {
-	color: color('jet');
+	color: $theme-text;
 	font-family: $body-font;
 }
 
@@ -14,11 +14,24 @@ h6 {
 
 #content {
 
-	#counters {
-		background-color: color('orange-fill');
-	}
+	#counters,
 	#clients {
-		background-color: color('purple-fill');
+		background-color: $theme-color;
+	}
+}
+
+a {
+	color: $link-color;
+	font-weight: inherit;
+
+	&:focus,
+	&:hover,
+	&:active {
+		color: $link-hover;
+	}
+
+	#page & {
+		text-decoration: underline;
 	}
 }
 

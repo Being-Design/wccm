@@ -1,7 +1,7 @@
 .learndash {
 
 	a {
-		color: color('purple-text');
+		color: $theme-color;
 	}
 
 	#learndash_course_materials {
@@ -18,8 +18,12 @@
 			@include font-px(21.5);
 		}
 
-		.lesson-meta {
-			color: color('purple-text');
+		#learndash_lessons .lesson-meta {
+
+			&,
+			.drop-list:before {
+				color: color('purple-text');
+			}
 		}
 
 		.learndash_topic_dots a {
