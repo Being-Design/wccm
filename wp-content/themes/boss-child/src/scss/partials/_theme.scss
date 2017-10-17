@@ -21,13 +21,13 @@ h6 {
 }
 
 a {
-	color: $link-color;
+	color: $theme-link;
 	font-weight: inherit;
 
 	&:focus,
 	&:hover,
 	&:active {
-		color: $link-hover;
+		color: $theme-link-hover;
 	}
 
 	#page & {

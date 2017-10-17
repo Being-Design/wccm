@@ -1,18 +1,96 @@
 .btn,
 a.btn,
 a.button,
-#cs-content .x-btn {
+#cs-content.cs-content .x-btn,
+#cs-content.cs-content .x-btn.x-btn-flat {
+	$btn-color: $theme-color !default;
+	$btn-hover: $theme-dark !default;
+
+	border: $btn-color 2px solid;
+	background: $btn-color;
+	color: color('white');
 	width: auto;
-	border: $theme-color 2px solid;
-	background: transparent;
+	padding: 14px;
 	text-decoration: none;
-	transition: border-color $trans-time;
+	@include text-uppercase;
+	font-weight: font-weight('semi-bold');
+	text-shadow: none;
+	transition: border-color $trans-time, background $trans-time, color $trans-time;
 
 	border-radius: $btn-border-radius;
 
 	&:hover,
 	&:focus,
 	&:active {
-		border-color: $theme-accent;
+		border-color: $btn-hover;
+		background-color: $btn-hover;
+		text-shadow: none;
+	}
+
+	&.btn-transparent {
+		color: inherit;
+		background: transparent;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $btn-hover;
+			color: color('white');
+		}
+	}
+
+	&.alt {
+		$btn-color: $highlight1;
+		$btn-hover: $highlight1-hover;
+
+		color: color('black');
+		border-color: $btn-color;
+		background-color: $btn-color;
+
+		&:hover,
+		&:focus,
+		&:active {
+			border-color: $btn-hover;
+			background-color: $btn-hover;
+		}
+
+		&.btn-transparent {
+			color: inherit;
+			background: transparent;
+			border-color: color('black');
+
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: $btn-hover;
+			}
+		}
+	}
+
+	&.white {
+		$btn-color: color('white');
+		$btn-hover: rgba( color('white'), 0.88);
+
+		color: color('black');
+		background-color: $btn-color;
+		border-color: $btn-color;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $btn-hover;
+		}
+
+		&.btn-transparent {
+			color: color('white');
+			background-color: transparent;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: color('black');
+				background-color: color('white');
+			}
+		}
 	}
 }

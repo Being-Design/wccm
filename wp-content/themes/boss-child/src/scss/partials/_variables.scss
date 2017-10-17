@@ -8,22 +8,26 @@ $path-images: '../../images';
 $palette: (
 	'white':					#fff,
 	'black': 					#000,
-	'jet':						#333,
+	'jet':						#05161a,
 	'platinum':				#eee,
 	'snow':						#f3f3f3,
-	'silver':					#ccc,
+	'silver':					#d9d9d9,
 	'platinum-blue':	#f1f4f9,
 	'silver-blue':		#e4ebf3,
 	'ink':						#140b31,
 	'gray-light':			#d9d9d9,
 	'blue-fill':			#0b5394,
 	'gold-fill':			#f1c232,
+	'gold-fill-dark':	#d4a924,
 	'teal-fill':			#45818e,
 	'orange-fill':		#e69138,
 	'purple-fill':		#351c75,
 	'purple-text':		#20124d,
 	'purple-light':		#674ea7,
-	'terra-cotta':		#b74e44,
+	'terra-cotta':		#A44734,
+	'teal-dark': 			#0c343d,
+	'gray-lessons':		#f1f4f9,
+	'gray-topics':		#e4ebf3,
 	);
 
 
@@ -68,18 +72,22 @@ $directions: (top, right, bottom, left);
 // type
 $body-font: $font-alegreya-sans;
 $header-font: $font-cormorant-garamond;
-$uppercase_letter_spacing: 0.075em !default;
+$uppercase-letter-spacing: 0.075em !default;
 
 // colors
-$theme-color: color('purple-fill') !default;
-$theme-dark: color('purple-text') !default;
+$theme-color: color('teal-fill') !default;
+$theme-dark: color('teal-dark') !default;
 $theme-text: color('jet') !default;
-$theme-accent: color('gold-fill') !default;
-$highlight1: color('orange-fill') !default;
-$highlight2: color('gold-fill') !default;
-$link-color: color('terra-cotta') !default;
-$link-hover: darken(color('terra-cotta'), 15%) !default;
+$theme-grey: color('snow') !default;
+$theme-link: color('terra-cotta') !default;
+$theme-link-hover: darken(color('terra-cotta'), 15%) !default;
+$highlight1: color('gold-fill') !default;
+$highlight1-hover: color('gold-fill-dark') !default;
+$highlight2: color('orange-fill') !default;
 $nav-link-color: color('blue-fill') !default;
+$nav-link-hover: color('silver') !default;
+$table-bg-lessons: color('gray-lessons') !default;
+$table-bg-topics: color('gray-topics') !default;
 
 // block elements
 $border-radius: 4px !default;

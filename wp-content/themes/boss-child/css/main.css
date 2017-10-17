@@ -28,7 +28,7 @@ body.bd-hide-left-bar #right-panel-inner {
   margin-left: 0; }
 
 body {
-  color: #333;
+  color: #05161a;
   font-family: "Alegreya Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1,
@@ -41,25 +41,32 @@ h6 {
 
 #content #counters,
 #content #clients {
-  background-color: #351c75; }
+  background-color: #45818e; }
 
 a {
-  color: #b74e44;
+  color: #A44734;
   font-weight: inherit; }
   a:focus, a:hover, a:active {
-    color: #7f362f; }
+    color: #6a2e22; }
   #page a {
     text-decoration: underline; }
 
 .btn,
 a.btn,
 a.button,
-#cs-content .x-btn {
+#cs-content.cs-content .x-btn,
+#cs-content.cs-content .x-btn.x-btn-flat {
+  border: #45818e 2px solid;
+  background: #45818e;
+  color: #fff;
   width: auto;
-  border: #351c75 2px solid;
-  background: transparent;
+  padding: 14px;
   text-decoration: none;
-  transition: border-color 250ms;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  font-weight: 600;
+  text-shadow: none;
+  transition: border-color 250ms, background 250ms, color 250ms;
   border-radius: 9001px; }
   .btn:hover, .btn:focus, .btn:active,
   a.btn:hover,
@@ -68,10 +75,126 @@ a.button,
   a.button:hover,
   a.button:focus,
   a.button:active,
-  #cs-content .x-btn:hover,
-  #cs-content .x-btn:focus,
-  #cs-content .x-btn:active {
-    border-color: #f1c232; }
+  #cs-content.cs-content .x-btn:hover,
+  #cs-content.cs-content .x-btn:focus,
+  #cs-content.cs-content .x-btn:active,
+  #cs-content.cs-content .x-btn.x-btn-flat:hover,
+  #cs-content.cs-content .x-btn.x-btn-flat:focus,
+  #cs-content.cs-content .x-btn.x-btn-flat:active {
+    border-color: #0c343d;
+    background-color: #0c343d;
+    text-shadow: none; }
+  .btn.btn-transparent,
+  a.btn.btn-transparent,
+  a.button.btn-transparent,
+  #cs-content.cs-content .x-btn.btn-transparent,
+  #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent {
+    color: inherit;
+    background: transparent; }
+    .btn.btn-transparent:hover, .btn.btn-transparent:focus, .btn.btn-transparent:active,
+    a.btn.btn-transparent:hover,
+    a.btn.btn-transparent:focus,
+    a.btn.btn-transparent:active,
+    a.button.btn-transparent:hover,
+    a.button.btn-transparent:focus,
+    a.button.btn-transparent:active,
+    #cs-content.cs-content .x-btn.btn-transparent:hover,
+    #cs-content.cs-content .x-btn.btn-transparent:focus,
+    #cs-content.cs-content .x-btn.btn-transparent:active,
+    #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent:hover,
+    #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent:focus,
+    #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent:active {
+      background-color: #0c343d;
+      color: #fff; }
+  .btn.alt,
+  a.btn.alt,
+  a.button.alt,
+  #cs-content.cs-content .x-btn.alt,
+  #cs-content.cs-content .x-btn.x-btn-flat.alt {
+    color: #000;
+    border-color: #f1c232;
+    background-color: #f1c232; }
+    .btn.alt:hover, .btn.alt:focus, .btn.alt:active,
+    a.btn.alt:hover,
+    a.btn.alt:focus,
+    a.btn.alt:active,
+    a.button.alt:hover,
+    a.button.alt:focus,
+    a.button.alt:active,
+    #cs-content.cs-content .x-btn.alt:hover,
+    #cs-content.cs-content .x-btn.alt:focus,
+    #cs-content.cs-content .x-btn.alt:active,
+    #cs-content.cs-content .x-btn.x-btn-flat.alt:hover,
+    #cs-content.cs-content .x-btn.x-btn-flat.alt:focus,
+    #cs-content.cs-content .x-btn.x-btn-flat.alt:active {
+      border-color: #d4a924;
+      background-color: #d4a924; }
+    .btn.alt.btn-transparent,
+    a.btn.alt.btn-transparent,
+    a.button.alt.btn-transparent,
+    #cs-content.cs-content .x-btn.alt.btn-transparent,
+    #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent {
+      color: inherit;
+      background: transparent;
+      border-color: #000; }
+      .btn.alt.btn-transparent:hover, .btn.alt.btn-transparent:focus, .btn.alt.btn-transparent:active,
+      a.btn.alt.btn-transparent:hover,
+      a.btn.alt.btn-transparent:focus,
+      a.btn.alt.btn-transparent:active,
+      a.button.alt.btn-transparent:hover,
+      a.button.alt.btn-transparent:focus,
+      a.button.alt.btn-transparent:active,
+      #cs-content.cs-content .x-btn.alt.btn-transparent:hover,
+      #cs-content.cs-content .x-btn.alt.btn-transparent:focus,
+      #cs-content.cs-content .x-btn.alt.btn-transparent:active,
+      #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent:hover,
+      #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent:focus,
+      #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent:active {
+        background-color: #d4a924; }
+  .btn.white,
+  a.btn.white,
+  a.button.white,
+  #cs-content.cs-content .x-btn.white,
+  #cs-content.cs-content .x-btn.x-btn-flat.white {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff; }
+    .btn.white:hover, .btn.white:focus, .btn.white:active,
+    a.btn.white:hover,
+    a.btn.white:focus,
+    a.btn.white:active,
+    a.button.white:hover,
+    a.button.white:focus,
+    a.button.white:active,
+    #cs-content.cs-content .x-btn.white:hover,
+    #cs-content.cs-content .x-btn.white:focus,
+    #cs-content.cs-content .x-btn.white:active,
+    #cs-content.cs-content .x-btn.x-btn-flat.white:hover,
+    #cs-content.cs-content .x-btn.x-btn-flat.white:focus,
+    #cs-content.cs-content .x-btn.x-btn-flat.white:active {
+      background-color: rgba(255, 255, 255, 0.88); }
+    .btn.white.btn-transparent,
+    a.btn.white.btn-transparent,
+    a.button.white.btn-transparent,
+    #cs-content.cs-content .x-btn.white.btn-transparent,
+    #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent {
+      color: #fff;
+      background-color: transparent; }
+      .btn.white.btn-transparent:hover, .btn.white.btn-transparent:focus, .btn.white.btn-transparent:active,
+      a.btn.white.btn-transparent:hover,
+      a.btn.white.btn-transparent:focus,
+      a.btn.white.btn-transparent:active,
+      a.button.white.btn-transparent:hover,
+      a.button.white.btn-transparent:focus,
+      a.button.white.btn-transparent:active,
+      #cs-content.cs-content .x-btn.white.btn-transparent:hover,
+      #cs-content.cs-content .x-btn.white.btn-transparent:focus,
+      #cs-content.cs-content .x-btn.white.btn-transparent:active,
+      #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent:hover,
+      #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent:focus,
+      #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent:active {
+        color: #000;
+        background-color: #fff; }
 
 #header-main {
   position: fixed;
@@ -79,7 +202,7 @@ a.button,
   z-index: 5;
   width: 100%;
   background-color: #fff;
-  color: #351c75; }
+  color: #45818e; }
   @media screen and (max-width: 479px) {
     #header-main {
       display: none; } }
@@ -105,10 +228,10 @@ a.button,
   #header-main #masthead {
     position: relative;
     height: 75px;
-    border-top: #ccc 1px solid; }
+    border-top: #d9d9d9 1px solid; }
     #header-main #masthead #search-open {
       background: none;
-      color: #351c75; }
+      color: #45818e; }
       #header-main #masthead #search-open:before {
         content: '';
         position: absolute;
@@ -119,7 +242,7 @@ a.button,
         transform: translate(-50%, -50%) scale(0.35) ;
         width: 35px;
         height: 35px;
-        background: #351c75;
+        background: #45818e;
         border-radius: 50%;
         opacity: 0;
         transition: opacity 250ms, transform 250ms; }
@@ -202,12 +325,12 @@ body.is-mobile #left-panel.menu-panel {
   body.is-mobile #mobile-menu.menu-panel #left-panel-inner a,
   body.is-mobile #left-panel.menu-panel #header-menu a,
   body.is-mobile #left-panel.menu-panel #left-panel-inner a {
-    color: #ccc; }
+    color: #d9d9d9; }
     body.is-mobile #mobile-menu.menu-panel #header-menu a:before,
     body.is-mobile #mobile-menu.menu-panel #left-panel-inner a:before,
     body.is-mobile #left-panel.menu-panel #header-menu a:before,
     body.is-mobile #left-panel.menu-panel #left-panel-inner a:before {
-      color: #333; }
+      color: #05161a; }
     body.is-mobile #mobile-menu.menu-panel #header-menu a, body.is-mobile #mobile-menu.menu-panel #header-menu a:before,
     body.is-mobile #mobile-menu.menu-panel #left-panel-inner a,
     body.is-mobile #mobile-menu.menu-panel #left-panel-inner a:before,
@@ -237,15 +360,15 @@ body.is-mobile #left-panel.menu-panel {
       body.is-mobile #left-panel.menu-panel #left-panel-inner a:hover:before,
       body.is-mobile #left-panel.menu-panel #left-panel-inner a:focus:before,
       body.is-mobile #left-panel.menu-panel #left-panel-inner a:active:before {
-        color: #ccc; }
+        color: #d9d9d9; }
   body.is-mobile #mobile-menu.menu-panel #header-menu .dropdown .ab-sub-wrapper,
   body.is-mobile #mobile-menu.menu-panel #left-panel-inner .dropdown .ab-sub-wrapper,
   body.is-mobile #left-panel.menu-panel #header-menu .dropdown .ab-sub-wrapper,
   body.is-mobile #left-panel.menu-panel #left-panel-inner .dropdown .ab-sub-wrapper {
-    background-color: #333; }
+    background-color: #05161a; }
 
 body.is-mobile #mobile-header {
-  background-color: #333; }
+  background-color: #05161a; }
   body.is-mobile #mobile-header a {
     color: #fff; }
 
@@ -407,11 +530,11 @@ body.is-mobile #mobile-header {
         max-width: none; }
 
 .course-header .progress-wrap {
-  color: #ccc; }
+  color: #d9d9d9; }
   .course-header .progress-wrap .course_progress {
-    background-color: #ccc; }
+    background-color: #d9d9d9; }
     .course-header .progress-wrap .course_progress .course_progress_blue {
-      background-color: #e69138; }
+      background-color: #f1c232; }
 
 #buddypress div#item-nav {
   margin-bottom: 35px; }
@@ -423,7 +546,7 @@ body.is-mobile #mobile-header {
       #buddypress div#item-nav #object-nav ul li a,
       #buddypress div#item-nav #object-nav ul li a:visited {
         padding: 16px 20px;
-        color: #351c75;
+        color: #45818e;
         font-weight: 300; }
       #buddypress div#item-nav #object-nav ul li.current.selected,
       #buddypress div#item-nav #object-nav ul li a:hover,
@@ -433,7 +556,7 @@ body.is-mobile #mobile-header {
         border: none; }
 
 .learndash a {
-  color: #351c75; }
+  color: #45818e; }
 
 .learndash #learndash_course_materials a {
   font-weight: 700; }

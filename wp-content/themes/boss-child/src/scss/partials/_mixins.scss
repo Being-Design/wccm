@@ -119,7 +119,7 @@
 
  @mixin text-uppercase() {
  	text-transform: uppercase;
- 	letter-spacing: $uppercase_letter_spacing;
+ 	letter-spacing: $uppercase-letter-spacing;
  }
 
  @mixin placeholder() {
