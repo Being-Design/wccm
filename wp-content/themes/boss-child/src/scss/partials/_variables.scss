@@ -73,6 +73,7 @@ $directions: (top, right, bottom, left);
 $body-font: $font-alegreya-sans;
 $header-font: $font-cormorant-garamond;
 $uppercase-letter-spacing: 0.075em !default;
+$body-font-size: 20px;
 
 // colors
 $theme-color: color('teal-fill') !default;
@@ -96,3 +97,5 @@ $btn-border-radius: 9001px !default;
 // misc
 $trans-time: 250ms !default;
 $box-shadow:  0 4px 4px rgba( color('black'), 0.25);
+
+

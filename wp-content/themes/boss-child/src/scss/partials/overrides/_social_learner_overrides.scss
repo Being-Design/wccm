@@ -26,4 +26,12 @@ body .entry-content {
 			}
 		}
 	}
+
+	.course.sfwd-courses {
+
+		@include media(md) {
+			width: 33.33333% !important;
+			max-width: none;
+		}
+	}
 }

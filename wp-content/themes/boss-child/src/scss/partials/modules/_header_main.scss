@@ -11,6 +11,7 @@ $nav-height: 75px;
 	width: 100%;
 	background-color: color('white');
 	color: $theme-color;
+	box-shadow: 0 4px 4px rgba( color('black'), 0.1 );
 
 	@include media(xs, 'max') {
 		display: none;
@@ -80,7 +81,7 @@ $nav-height: 75px;
 		}
 
 		body.logged-in & {
-			$logo-menu-gutter: 75px;
+			$logo-menu-gutter: 20px;
 
 			border-top: none;
 			float: left;

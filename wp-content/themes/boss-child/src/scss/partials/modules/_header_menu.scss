@@ -5,6 +5,7 @@
 	
 	> .horizontal-responsive-menu {
 		overflow: visible;
+		text-align: left;
 
 		> .menu-item { // li
 			position: relative;
@@ -21,6 +22,7 @@
 					width: 1px;
 					height: 35%;
 					background: linear-gradient(to top,transparent 0%, color('platinum') 35%, color('platinum') 100%);
+					z-index: -1px;
 				}
 			}
 

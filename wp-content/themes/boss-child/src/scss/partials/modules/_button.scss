@@ -2,7 +2,9 @@
 a.btn,
 a.button,
 #cs-content.cs-content .x-btn,
-#cs-content.cs-content .x-btn.x-btn-flat {
+#cs-content.cs-content .x-btn.x-btn-flat,
+#cs-content.cs-content .x-btn.x-btn-transparent,
+#cs-content.cs-content .x-btn.x-btn-real {
 	$btn-color: $theme-color !default;
 	$btn-hover: $theme-dark !default;
 
@@ -15,6 +17,7 @@ a.button,
 	@include text-uppercase;
 	font-weight: font-weight('semi-bold');
 	text-shadow: none;
+	box-shadow: none;
 	transition: border-color $trans-time, background $trans-time, color $trans-time;
 
 	border-radius: $btn-border-radius;
@@ -25,6 +28,7 @@ a.button,
 		border-color: $btn-hover;
 		background-color: $btn-hover;
 		text-shadow: none;
+		box-shadow: none;
 	}
 
 	&.btn-transparent {

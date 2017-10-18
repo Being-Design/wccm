@@ -17,8 +17,8 @@ html {
   font-size: 62.5% !important; }
 
 body {
-  font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 20px;
+  font-size: 2rem; }
 
 .center-margin {
   margin-left: auto;
@@ -55,7 +55,9 @@ a {
 a.btn,
 a.button,
 #cs-content.cs-content .x-btn,
-#cs-content.cs-content .x-btn.x-btn-flat {
+#cs-content.cs-content .x-btn.x-btn-flat,
+#cs-content.cs-content .x-btn.x-btn-transparent,
+#cs-content.cs-content .x-btn.x-btn-real {
   border: #45818e 2px solid;
   background: #45818e;
   color: #fff;
@@ -66,6 +68,7 @@ a.button,
   letter-spacing: 0.075em;
   font-weight: 600;
   text-shadow: none;
+  box-shadow: none;
   transition: border-color 250ms, background 250ms, color 250ms;
   border-radius: 9001px; }
   .btn:hover, .btn:focus, .btn:active,
@@ -80,15 +83,24 @@ a.button,
   #cs-content.cs-content .x-btn:active,
   #cs-content.cs-content .x-btn.x-btn-flat:hover,
   #cs-content.cs-content .x-btn.x-btn-flat:focus,
-  #cs-content.cs-content .x-btn.x-btn-flat:active {
+  #cs-content.cs-content .x-btn.x-btn-flat:active,
+  #cs-content.cs-content .x-btn.x-btn-transparent:hover,
+  #cs-content.cs-content .x-btn.x-btn-transparent:focus,
+  #cs-content.cs-content .x-btn.x-btn-transparent:active,
+  #cs-content.cs-content .x-btn.x-btn-real:hover,
+  #cs-content.cs-content .x-btn.x-btn-real:focus,
+  #cs-content.cs-content .x-btn.x-btn-real:active {
     border-color: #0c343d;
     background-color: #0c343d;
-    text-shadow: none; }
+    text-shadow: none;
+    box-shadow: none; }
   .btn.btn-transparent,
   a.btn.btn-transparent,
   a.button.btn-transparent,
   #cs-content.cs-content .x-btn.btn-transparent,
-  #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent {
+  #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent,
+  #cs-content.cs-content .x-btn.x-btn-transparent.btn-transparent,
+  #cs-content.cs-content .x-btn.x-btn-real.btn-transparent {
     color: inherit;
     background: transparent; }
     .btn.btn-transparent:hover, .btn.btn-transparent:focus, .btn.btn-transparent:active,
@@ -103,14 +115,22 @@ a.button,
     #cs-content.cs-content .x-btn.btn-transparent:active,
     #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent:hover,
     #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent:focus,
-    #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent:active {
+    #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent:active,
+    #cs-content.cs-content .x-btn.x-btn-transparent.btn-transparent:hover,
+    #cs-content.cs-content .x-btn.x-btn-transparent.btn-transparent:focus,
+    #cs-content.cs-content .x-btn.x-btn-transparent.btn-transparent:active,
+    #cs-content.cs-content .x-btn.x-btn-real.btn-transparent:hover,
+    #cs-content.cs-content .x-btn.x-btn-real.btn-transparent:focus,
+    #cs-content.cs-content .x-btn.x-btn-real.btn-transparent:active {
       background-color: #0c343d;
       color: #fff; }
   .btn.alt,
   a.btn.alt,
   a.button.alt,
   #cs-content.cs-content .x-btn.alt,
-  #cs-content.cs-content .x-btn.x-btn-flat.alt {
+  #cs-content.cs-content .x-btn.x-btn-flat.alt,
+  #cs-content.cs-content .x-btn.x-btn-transparent.alt,
+  #cs-content.cs-content .x-btn.x-btn-real.alt {
     color: #000;
     border-color: #f1c232;
     background-color: #f1c232; }
@@ -126,14 +146,22 @@ a.button,
     #cs-content.cs-content .x-btn.alt:active,
     #cs-content.cs-content .x-btn.x-btn-flat.alt:hover,
     #cs-content.cs-content .x-btn.x-btn-flat.alt:focus,
-    #cs-content.cs-content .x-btn.x-btn-flat.alt:active {
+    #cs-content.cs-content .x-btn.x-btn-flat.alt:active,
+    #cs-content.cs-content .x-btn.x-btn-transparent.alt:hover,
+    #cs-content.cs-content .x-btn.x-btn-transparent.alt:focus,
+    #cs-content.cs-content .x-btn.x-btn-transparent.alt:active,
+    #cs-content.cs-content .x-btn.x-btn-real.alt:hover,
+    #cs-content.cs-content .x-btn.x-btn-real.alt:focus,
+    #cs-content.cs-content .x-btn.x-btn-real.alt:active {
       border-color: #d4a924;
       background-color: #d4a924; }
     .btn.alt.btn-transparent,
     a.btn.alt.btn-transparent,
     a.button.alt.btn-transparent,
     #cs-content.cs-content .x-btn.alt.btn-transparent,
-    #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent {
+    #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent,
+    #cs-content.cs-content .x-btn.x-btn-transparent.alt.btn-transparent,
+    #cs-content.cs-content .x-btn.x-btn-real.alt.btn-transparent {
       color: inherit;
       background: transparent;
       border-color: #000; }
@@ -149,13 +177,21 @@ a.button,
       #cs-content.cs-content .x-btn.alt.btn-transparent:active,
       #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent:hover,
       #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent:focus,
-      #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent:active {
+      #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent:active,
+      #cs-content.cs-content .x-btn.x-btn-transparent.alt.btn-transparent:hover,
+      #cs-content.cs-content .x-btn.x-btn-transparent.alt.btn-transparent:focus,
+      #cs-content.cs-content .x-btn.x-btn-transparent.alt.btn-transparent:active,
+      #cs-content.cs-content .x-btn.x-btn-real.alt.btn-transparent:hover,
+      #cs-content.cs-content .x-btn.x-btn-real.alt.btn-transparent:focus,
+      #cs-content.cs-content .x-btn.x-btn-real.alt.btn-transparent:active {
         background-color: #d4a924; }
   .btn.white,
   a.btn.white,
   a.button.white,
   #cs-content.cs-content .x-btn.white,
-  #cs-content.cs-content .x-btn.x-btn-flat.white {
+  #cs-content.cs-content .x-btn.x-btn-flat.white,
+  #cs-content.cs-content .x-btn.x-btn-transparent.white,
+  #cs-content.cs-content .x-btn.x-btn-real.white {
     color: #000;
     background-color: #fff;
     border-color: #fff; }
@@ -171,13 +207,21 @@ a.button,
     #cs-content.cs-content .x-btn.white:active,
     #cs-content.cs-content .x-btn.x-btn-flat.white:hover,
     #cs-content.cs-content .x-btn.x-btn-flat.white:focus,
-    #cs-content.cs-content .x-btn.x-btn-flat.white:active {
+    #cs-content.cs-content .x-btn.x-btn-flat.white:active,
+    #cs-content.cs-content .x-btn.x-btn-transparent.white:hover,
+    #cs-content.cs-content .x-btn.x-btn-transparent.white:focus,
+    #cs-content.cs-content .x-btn.x-btn-transparent.white:active,
+    #cs-content.cs-content .x-btn.x-btn-real.white:hover,
+    #cs-content.cs-content .x-btn.x-btn-real.white:focus,
+    #cs-content.cs-content .x-btn.x-btn-real.white:active {
       background-color: rgba(255, 255, 255, 0.88); }
     .btn.white.btn-transparent,
     a.btn.white.btn-transparent,
     a.button.white.btn-transparent,
     #cs-content.cs-content .x-btn.white.btn-transparent,
-    #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent {
+    #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent,
+    #cs-content.cs-content .x-btn.x-btn-transparent.white.btn-transparent,
+    #cs-content.cs-content .x-btn.x-btn-real.white.btn-transparent {
       color: #fff;
       background-color: transparent; }
       .btn.white.btn-transparent:hover, .btn.white.btn-transparent:focus, .btn.white.btn-transparent:active,
@@ -192,7 +236,13 @@ a.button,
       #cs-content.cs-content .x-btn.white.btn-transparent:active,
       #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent:hover,
       #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent:focus,
-      #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent:active {
+      #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent:active,
+      #cs-content.cs-content .x-btn.x-btn-transparent.white.btn-transparent:hover,
+      #cs-content.cs-content .x-btn.x-btn-transparent.white.btn-transparent:focus,
+      #cs-content.cs-content .x-btn.x-btn-transparent.white.btn-transparent:active,
+      #cs-content.cs-content .x-btn.x-btn-real.white.btn-transparent:hover,
+      #cs-content.cs-content .x-btn.x-btn-real.white.btn-transparent:focus,
+      #cs-content.cs-content .x-btn.x-btn-real.white.btn-transparent:active {
         color: #000;
         background-color: #fff; }
 
@@ -202,7 +252,8 @@ a.button,
   z-index: 5;
   width: 100%;
   background-color: #fff;
-  color: #45818e; }
+  color: #45818e;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); }
   @media screen and (max-width: 479px) {
     #header-main {
       display: none; } }
@@ -283,8 +334,8 @@ a.button,
               visibility: hidden; } }
       @media screen and (min-width: 992px) {
         body.logged-in #header-main #masthead {
-          margin-left: 75px;
-          width: calc(100% - 180px); } }
+          margin-left: 20px;
+          width: calc(100% - 125px); } }
   #header-main .header-outher {
     box-shadow: none;
     margin-left: 0; }
@@ -375,7 +426,8 @@ body.is-mobile #mobile-header {
 .header-navigation #header-menu {
   text-align: center; }
   .header-navigation #header-menu > .horizontal-responsive-menu {
-    overflow: visible; }
+    overflow: visible;
+    text-align: left; }
     .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item {
       position: relative; }
       .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item + .menu-item {
@@ -388,7 +440,8 @@ body.is-mobile #mobile-header {
           top: 0;
           width: 1px;
           height: 35%;
-          background: linear-gradient(to top, transparent 0%, #eee 35%, #eee 100%); }
+          background: linear-gradient(to top, transparent 0%, #eee 35%, #eee 100%);
+          z-index: -1px; }
       .header-navigation #header-menu > .horizontal-responsive-menu > .menu-item a {
         position: relative;
         padding: 0 30px;
@@ -656,3 +709,8 @@ body .entry-content #vc-courses > .vc_col-sm-12 h4,
 body .entry-content #vc-courses > .vc_col-sm-12 h5,
 body .entry-content #vc-courses > .vc_col-sm-12 h6 {
   font-family: "Cormorant Garamond", serif; }
+
+@media screen and (min-width: 992px) {
+  body .entry-content .course.sfwd-courses {
+    width: 33.33333% !important;
+    max-width: none; } }
