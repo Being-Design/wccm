@@ -2,7 +2,7 @@ $logo-height: 75px;
 $nav-height: 75px;
 
 #header-main {
-	$right-col-md-width: 200px;
+	$right-col-md-width: 215px;
 	$logged-in-logo-width: 105px;
 
 	position: fixed;
@@ -50,9 +50,13 @@ $nav-height: 75px;
 		height: $nav-height;
 		border-top: color('silver') 1px solid;
 
+		.right-col {
+			color: $theme-text;
+		}
+
 		#search-open {
 			background: none;
-			color: $theme-color;
+			color: $theme-text;
 
 			&:before {
 				content: '';
@@ -77,7 +81,10 @@ $nav-height: 75px;
 		}
 
 		.header-notifications {
-			color: color('purple-text');
+
+			.notification-link {
+				color: $theme-text;
+			}
 		}
 
 		body.logged-in & {
@@ -127,8 +134,9 @@ $nav-height: 75px;
 		.register,
 		.login {
 			border-radius: $btn-border-radius;
-			background-color: $nav-link-color;
 			font-weight: font-weight('normal');
+			@include font-px(14);
+			font-weight: font-weight('light');
 		}
 	}
 

@@ -5,13 +5,16 @@
 	
 	> .horizontal-responsive-menu {
 		overflow: visible;
-		text-align: left;
+
+		body.logged-in & {
+			text-align: left;
+		}
 
 		> .menu-item { // li
 			position: relative;
 			
 			& + .menu-item {
-				margin-left: -3px;
+				margin-left: -4px;
 
 				&:before {
 					content: '';
@@ -32,6 +35,8 @@
 				line-height: inherit;
 				color: $nav-link-color;
 				font-weight: font-weight('normal');
+				@include font-px(14);
+				@include text-uppercase;
 
 				&:before {
 					content: '';
@@ -43,10 +48,6 @@
 					background-color: color('blue-fill');
 					transition: opacity $trans-time;
 					opacity: 1;
-
-					body.logged-in & {
-						top: 0;
-					}
 				}
 
 				&:after {
