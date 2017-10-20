@@ -1,0 +1,106 @@
+.entry-content #cs-content {
+	
+	#top {
+
+		h1, 
+		h4 {
+			color: $theme-color;
+		}
+	}
+
+	.x-container.max.width {
+		margin-top: 50px;
+		margin-bottom: 75px;
+	}
+
+	h3 {
+		margin: 35px 0 75px;
+	}
+
+	.x-blockquote:not(.x-pullquote) {
+		border: none;
+		@include font-px(30);
+		line-height: 150%;
+		margin: 0 auto;
+
+		&:first-letter {
+			font-size: 2em;
+		}
+	}
+
+	.h-custom-headline.accent span {
+		@include font-px(30);
+
+		&:before {
+			margin-right: 50%;
+		}
+		&:after {
+			margin-left: 50%;
+		}
+		&:before,
+		&:after {
+			width: 175px;
+			height: 0;
+			margin-top: 0;
+			border-bottom: none;
+			border-color: $theme-color;
+		}
+	}
+
+	.cs-ta-center {
+
+		form {
+			margin: 0 auto;
+		}
+	}
+
+
+	#course-list-wrap,
+	.col-container {
+		$gutter: 20px;
+
+		margin-left: -$gutter/2;
+		margin-right: -$gutter/2;
+
+		.sfwd-courses,
+		.x-column {
+			// cs does an inline style for these
+			padding-left: $gutter !important;
+			padding-right: $gutter !important;
+			margin: 0 0 25px;
+		}
+
+		@include media(md) {
+			$gutter: 60px;
+
+			margin-left: -$gutter/2;
+			margin-right: -$gutter/2;
+
+			.sfwd-courses,
+			.x-column {
+				// cs does an inline style for these
+				padding-left: $gutter !important;
+				padding-right: $gutter !important;
+
+				width: 33.33333% !important;
+				max-width: none;
+			}
+		}
+	}
+
+	.x-promo {
+		border: none;
+		box-shadow: none;
+
+		a:not(.x-btn) {
+			color: $theme-color;
+			@include font-px(24);
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $theme-dark;
+			}
+		}
+	}
+}

@@ -31,6 +31,11 @@ body {
   color: #05161a;
   font-family: "Alegreya Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+#content #counters,
+#content #clients,
+#content #quote {
+  background-color: #45818e; }
+
 h1,
 h2,
 h3,
@@ -39,20 +44,23 @@ h5,
 h6 {
   font-family: "Cormorant Garamond", serif; }
 
-#content #counters,
-#content #clients {
-  background-color: #45818e; }
+.entry-content h1 {
+  color: #45818e; }
 
-a {
+a,
+.entry-content a {
   color: #A44734;
-  font-weight: inherit; }
-  a:focus, a:hover, a:active {
+  font-weight: inherit;
+  text-decoration: underline; }
+  a:focus, a:hover, a:active,
+  .entry-content a:focus,
+  .entry-content a:hover,
+  .entry-content a:active {
     color: #6a2e22; }
-  #page a {
-    text-decoration: underline; }
 
 .btn,
 a.btn,
+.button,
 a.button,
 #cs-content.cs-content .x-btn,
 #cs-content.cs-content .x-btn.x-btn-flat,
@@ -75,6 +83,9 @@ a.button,
   a.btn:hover,
   a.btn:focus,
   a.btn:active,
+  .button:hover,
+  .button:focus,
+  .button:active,
   a.button:hover,
   a.button:focus,
   a.button:active,
@@ -96,6 +107,7 @@ a.button,
     box-shadow: none; }
   .btn.btn-transparent,
   a.btn.btn-transparent,
+  .button.btn-transparent,
   a.button.btn-transparent,
   #cs-content.cs-content .x-btn.btn-transparent,
   #cs-content.cs-content .x-btn.x-btn-flat.btn-transparent,
@@ -107,6 +119,9 @@ a.button,
     a.btn.btn-transparent:hover,
     a.btn.btn-transparent:focus,
     a.btn.btn-transparent:active,
+    .button.btn-transparent:hover,
+    .button.btn-transparent:focus,
+    .button.btn-transparent:active,
     a.button.btn-transparent:hover,
     a.button.btn-transparent:focus,
     a.button.btn-transparent:active,
@@ -123,9 +138,11 @@ a.button,
     #cs-content.cs-content .x-btn.x-btn-real.btn-transparent:focus,
     #cs-content.cs-content .x-btn.x-btn-real.btn-transparent:active {
       background-color: #0c343d;
+      border-color: #0c343d;
       color: #fff; }
   .btn.alt,
   a.btn.alt,
+  .button.alt,
   a.button.alt,
   #cs-content.cs-content .x-btn.alt,
   #cs-content.cs-content .x-btn.x-btn-flat.alt,
@@ -138,6 +155,9 @@ a.button,
     a.btn.alt:hover,
     a.btn.alt:focus,
     a.btn.alt:active,
+    .button.alt:hover,
+    .button.alt:focus,
+    .button.alt:active,
     a.button.alt:hover,
     a.button.alt:focus,
     a.button.alt:active,
@@ -157,6 +177,7 @@ a.button,
       background-color: #d4a924; }
     .btn.alt.btn-transparent,
     a.btn.alt.btn-transparent,
+    .button.alt.btn-transparent,
     a.button.alt.btn-transparent,
     #cs-content.cs-content .x-btn.alt.btn-transparent,
     #cs-content.cs-content .x-btn.x-btn-flat.alt.btn-transparent,
@@ -169,6 +190,9 @@ a.button,
       a.btn.alt.btn-transparent:hover,
       a.btn.alt.btn-transparent:focus,
       a.btn.alt.btn-transparent:active,
+      .button.alt.btn-transparent:hover,
+      .button.alt.btn-transparent:focus,
+      .button.alt.btn-transparent:active,
       a.button.alt.btn-transparent:hover,
       a.button.alt.btn-transparent:focus,
       a.button.alt.btn-transparent:active,
@@ -187,6 +211,7 @@ a.button,
         background-color: #d4a924; }
   .btn.white,
   a.btn.white,
+  .button.white,
   a.button.white,
   #cs-content.cs-content .x-btn.white,
   #cs-content.cs-content .x-btn.x-btn-flat.white,
@@ -199,6 +224,9 @@ a.button,
     a.btn.white:hover,
     a.btn.white:focus,
     a.btn.white:active,
+    .button.white:hover,
+    .button.white:focus,
+    .button.white:active,
     a.button.white:hover,
     a.button.white:focus,
     a.button.white:active,
@@ -217,6 +245,7 @@ a.button,
       background-color: rgba(255, 255, 255, 0.88); }
     .btn.white.btn-transparent,
     a.btn.white.btn-transparent,
+    .button.white.btn-transparent,
     a.button.white.btn-transparent,
     #cs-content.cs-content .x-btn.white.btn-transparent,
     #cs-content.cs-content .x-btn.x-btn-flat.white.btn-transparent,
@@ -228,6 +257,9 @@ a.button,
       a.btn.white.btn-transparent:hover,
       a.btn.white.btn-transparent:focus,
       a.btn.white.btn-transparent:active,
+      .button.white.btn-transparent:hover,
+      .button.white.btn-transparent:focus,
+      .button.white.btn-transparent:active,
       a.button.white.btn-transparent:hover,
       a.button.white.btn-transparent:focus,
       a.button.white.btn-transparent:active,
@@ -596,6 +628,78 @@ body.is-mobile #mobile-header {
     .course-header .progress-wrap .course_progress .course_progress_blue {
       background-color: #f1c232; }
 
+.entry-content #cs-content #top h1,
+.entry-content #cs-content #top h4 {
+  color: #45818e; }
+
+.entry-content #cs-content .x-container.max.width {
+  margin-top: 50px;
+  margin-bottom: 75px; }
+
+.entry-content #cs-content h3 {
+  margin: 35px 0 75px; }
+
+.entry-content #cs-content .x-blockquote:not(.x-pullquote) {
+  border: none;
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 150%;
+  margin: 0 auto; }
+  .entry-content #cs-content .x-blockquote:not(.x-pullquote):first-letter {
+    font-size: 2em; }
+
+.entry-content #cs-content .h-custom-headline.accent span {
+  font-size: 30px;
+  font-size: 3rem; }
+  .entry-content #cs-content .h-custom-headline.accent span:before {
+    margin-right: 50%; }
+  .entry-content #cs-content .h-custom-headline.accent span:after {
+    margin-left: 50%; }
+  .entry-content #cs-content .h-custom-headline.accent span:before, .entry-content #cs-content .h-custom-headline.accent span:after {
+    width: 175px;
+    height: 0;
+    margin-top: 0;
+    border-bottom: none;
+    border-color: #45818e; }
+
+.entry-content #cs-content .cs-ta-center form {
+  margin: 0 auto; }
+
+.entry-content #cs-content #course-list-wrap,
+.entry-content #cs-content .col-container {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .entry-content #cs-content #course-list-wrap .sfwd-courses,
+  .entry-content #cs-content #course-list-wrap .x-column,
+  .entry-content #cs-content .col-container .sfwd-courses,
+  .entry-content #cs-content .col-container .x-column {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin: 0 0 25px; }
+  @media screen and (min-width: 992px) {
+    .entry-content #cs-content #course-list-wrap,
+    .entry-content #cs-content .col-container {
+      margin-left: -30px;
+      margin-right: -30px; }
+      .entry-content #cs-content #course-list-wrap .sfwd-courses,
+      .entry-content #cs-content #course-list-wrap .x-column,
+      .entry-content #cs-content .col-container .sfwd-courses,
+      .entry-content #cs-content .col-container .x-column {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+        width: 33.33333% !important;
+        max-width: none; } }
+
+.entry-content #cs-content .x-promo {
+  border: none;
+  box-shadow: none; }
+  .entry-content #cs-content .x-promo a:not(.x-btn) {
+    color: #45818e;
+    font-size: 24px;
+    font-size: 2.4rem; }
+    .entry-content #cs-content .x-promo a:not(.x-btn):hover, .entry-content #cs-content .x-promo a:not(.x-btn):focus, .entry-content #cs-content .x-promo a:not(.x-btn):active {
+      color: #0c343d; }
+
 #buddypress div#item-nav {
   margin-bottom: 35px; }
   #buddypress div#item-nav #object-nav {
@@ -642,7 +746,8 @@ body.is-mobile #mobile-header {
 #colophon .widget-area .widget .textwidget {
   color: #fff; }
 
-body .entry-content #students > .vc_col-sm-12, body .entry-content #students > .vc_col-sm-12 *,
+body .entry-content #students > .vc_col-sm-12,
+body .entry-content #students > .vc_col-sm-12 *,
 body .entry-content #clients > .vc_col-sm-12,
 body .entry-content #clients > .vc_col-sm-12 *,
 body .entry-content #companies > .vc_col-sm-12,
@@ -717,7 +822,13 @@ body .entry-content #vc-courses > .vc_col-sm-12 h5,
 body .entry-content #vc-courses > .vc_col-sm-12 h6 {
   font-family: "Cormorant Garamond", serif; }
 
-@media screen and (min-width: 992px) {
-  body .entry-content .course.sfwd-courses {
-    width: 33.33333% !important;
-    max-width: none; } }
+body .entry-content #course-list-wrap .sfwd-courses .course-flexible-area header h2 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #45818e;
+  max-height: none;
+  padding-bottom: 0;
+  border-bottom: none; }
+
+body .entry-content #course-list-wrap .sfwd-courses .course-flexible-area .sensei-course-meta {
+  margin-bottom: 20px; }

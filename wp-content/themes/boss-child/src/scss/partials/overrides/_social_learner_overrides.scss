@@ -12,7 +12,8 @@ body .entry-content {
 
 		> .vc_col-sm-12 {
 
-			&, * {
+			&, 
+			* {
 				font-family: $body-font;
 			}
 
@@ -27,11 +28,24 @@ body .entry-content {
 		}
 	}
 
-	.course.sfwd-courses {
+	#course-list-wrap {
 
-		@include media(md) {
-			width: 33.33333% !important;
-			max-width: none;
+		.sfwd-courses {
+
+			.course-flexible-area {
+
+				header h2 {
+					@include font-px(24);
+					color: $theme-color;
+					max-height: none;
+					padding-bottom: 0;
+					border-bottom: none;
+				}
+
+				.sensei-course-meta {
+					margin-bottom: 20px;
+				}
+			}
 		}
 	}
 }

@@ -1,5 +1,6 @@
 .btn,
 a.btn,
+.button,
 a.button,
 #cs-content.cs-content .x-btn,
 #cs-content.cs-content .x-btn.x-btn-flat,
@@ -39,6 +40,7 @@ a.button,
 		&:focus,
 		&:active {
 			background-color: $btn-hover;
+			border-color: $btn-hover;
 			color: color('white');
 		}
 	}
