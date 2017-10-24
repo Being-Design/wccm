@@ -49,11 +49,20 @@
 		}
 
 		.notcompleted,
-		.topic-notcompleted {
+		.topic-notcompleted,
+		#quiz_list .notcompleted {
 
 			&:before {
-				color: color('ink')
+				color: $theme-color;
+				top: 50%;
+				margin-top: 0;
+				@include transform( translate( 0, -50%) );
 			}
 		}
+	}
+
+	.widgettitle {
+		@extend h4;
+		color: hotpink;
 	}
 }

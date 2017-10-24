@@ -19,10 +19,11 @@ h4,
 h5,
 h6 {
 	font-family: $header-font;
+	color: $theme-dark;
 }
 
 .entry-content h1 {
-	color: $theme-color;
+	color: $theme-dark;
 }
 
 h1 { 
@@ -50,7 +51,8 @@ h6 {
 	letter-spacing: 0.1rem;
 }
 
-a {
+a,
+.social-learner a {
 
 	&,
 	.entry-content & {

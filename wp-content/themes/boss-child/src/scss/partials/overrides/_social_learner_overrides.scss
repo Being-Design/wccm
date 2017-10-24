@@ -1,4 +1,15 @@
-body .entry-content {
+body.social-learner {
+
+	.course-header {
+		padding-bottom: 92px;
+	}
+
+	#course-details {
+		position: relative;
+		margin-top: -84px;
+
+		background: transparent;
+	}
 
 	#students,
 	#clients,
@@ -58,5 +69,20 @@ body .entry-content {
 		p {
 			@include font-px(20);
 		}
+	}
+
+	.widget-area .widget_course_teacher header span p {
+		font-weight: font-weight('bold');
+		@include font-px(12);
+		text-transform: uppercase;
+	}
+
+	.widget-area .widget_course_teacher header span a {
+		font-family: $header-font;
+		@include font-px(22);
+	}
+
+	#learndash_course_status {
+		border: none;
 	}
 }

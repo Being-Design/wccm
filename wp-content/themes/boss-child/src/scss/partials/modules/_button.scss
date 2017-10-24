@@ -5,15 +5,17 @@ a.button,
 #cs-content.cs-content .x-btn,
 #cs-content.cs-content .x-btn.x-btn-flat,
 #cs-content.cs-content .x-btn.x-btn-transparent,
-#cs-content.cs-content .x-btn.x-btn-real {
+#cs-content.cs-content .x-btn.x-btn-real,
+.social-learner .sfwd-courses a.button {
 	$btn-color: $theme-color !default;
 	$btn-hover: $theme-dark !default;
+	$btn-padding: 14px !default;
 
 	border: $btn-color 2px solid;
 	background: $btn-color;
 	color: color('white');
 	width: auto;
-	padding: 14px;
+	padding: $btn-padding;
 	text-decoration: none;
 	@include text-uppercase;
 	font-weight: font-weight('semi-bold');
@@ -27,15 +29,19 @@ a.button,
 	&:focus,
 	&:active {
 		border-color: $btn-hover;
+		color: color('white');
 		border-width: 2px;
 		background-color: $btn-hover;
 		text-shadow: none;
 		box-shadow: none;
+		text-decoration: none;
 	}
 
-	&.btn-transparent {
+	&.btn-transparent,
+	&.inverse {
 		color: inherit;
 		background: transparent;
+		padding: $btn-padding;
 
 		&:hover,
 		&:focus,
