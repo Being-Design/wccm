@@ -24,9 +24,13 @@
 	}
 	h5 {
 		@include font-px(18);
+		text-transform: uppercase; 
+		letter-spacing: 0.1rem;
 	}
 	h6 {
 		@include font-px(18);
+		text-transform: uppercase; 
+		letter-spacing: 0.1rem;
 	}
 	
 	#top {

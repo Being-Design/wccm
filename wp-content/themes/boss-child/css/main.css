@@ -88,7 +88,8 @@ a,
 .entry-content a {
   color: #A44734;
   font-weight: inherit;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-weight: 400; }
   a:focus, a:hover, a:active,
   .entry-content a:focus,
   .entry-content a:hover,
@@ -696,11 +697,15 @@ body.is-mobile #mobile-header {
 
 .entry-content #cs-content h5 {
   font-size: 18px;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; }
 
 .entry-content #cs-content h6 {
   font-size: 18px;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; }
 
 .entry-content #cs-content #top h1,
 .entry-content #cs-content #top h4 {

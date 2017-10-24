@@ -37,6 +37,7 @@ a {
 		color: $theme-link;
 		font-weight: inherit;
 		text-decoration: underline;
+		font-weight: font-weight('normal');
 
 		&:focus,
 		&:hover,
