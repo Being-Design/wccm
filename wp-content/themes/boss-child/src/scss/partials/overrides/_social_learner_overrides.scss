@@ -48,4 +48,15 @@ body .entry-content {
 			}
 		}
 	}
+
+	.lms-post-content {
+
+		h1 {
+			color: $theme-dark;
+		}
+
+		p {
+			@include font-px(20);
+		}
+	}
 }

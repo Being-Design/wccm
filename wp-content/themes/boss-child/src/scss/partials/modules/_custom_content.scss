@@ -1,4 +1,5 @@
 .entry-content {
+	@include font-px(20);
 
 	h1,
 	h2,
@@ -31,6 +32,10 @@
 		@include font-px(18);
 		text-transform: uppercase; 
 		letter-spacing: 0.1rem;
+	}
+
+	p {
+
 	}
 	
 	#top {
