@@ -1,4 +1,4 @@
-.entry-content #cs-content {
+.entry-content {
 
 	h1,
 	h2,
@@ -42,71 +42,73 @@
 		}
 	}
 
-	h1,
-	h2 {
+	#cs-content {
 
-		&.h-custom-headline {
-			margin-bottom: 0.5em;
+		h1,
+		h2 {
+
+			&.h-custom-headline {
+				margin-bottom: 0.5em;
+			}
 		}
-	}
 
-	h3.h-custom-headline.accent span {
-		margin: 35px 0 75px;
-		@include font-px(30);
+		h3.h-custom-headline.accent span {
+			margin: 35px 0 75px;
+			@include font-px(30);
 
-		&:before {
-			margin-right: 50%;
+			&:before {
+				margin-right: 50%;
+			}
+			&:after {
+				margin-left: 50%;
+			}
+			&:before,
+			&:after {
+				width: 175px;
+				height: 0;
+				margin-top: 0;
+				border-bottom: none;
+				border-color: $theme-color;
+			}
 		}
-		&:after {
-			margin-left: 50%;
+
+		.x-text h3 {
+			margin: 15px 0 5px;
 		}
-		&:before,
-		&:after {
-			width: 175px;
-			height: 0;
-			margin-top: 0;
-			border-bottom: none;
-			border-color: $theme-color;
+
+		.x-container.max.width {
+			margin-top: 50px;
+			margin-bottom: 75px;
 		}
-	}
 
-	.x-text h3 {
-		margin: 15px 0 5px;
-	}
-
-	.x-container.max.width {
-		margin-top: 50px;
-		margin-bottom: 75px;
-	}
-
-	.x-blockquote:not(.x-pullquote) {
-		border: none;
-		@include font-px(30);
-		line-height: 150%;
-		margin: 0 auto;
-
-		&:first-letter {
-			font-size: 2em;
-		}
-	}
-
-	.cs-ta-center {
-
-		form {
+		.x-blockquote:not(.x-pullquote) {
+			border: none;
+			@include font-px(30);
+			line-height: 150%;
 			margin: 0 auto;
+
+			&:first-letter {
+				font-size: 2em;
+			}
 		}
-	}
+
+		.cs-ta-center {
+
+			form {
+				margin: 0 auto;
+			}
+		}
 
 
-	#course-list-wrap,
-	.col-container {
-		$gutter: 20px;
+		#course-list-wrap,
+		.col-container {
+			$gutter: 20px;
 
-		margin-left: -$gutter/2;
-		margin-right: -$gutter/2;
+			margin-left: -$gutter/2;
+			margin-right: -$gutter/2;
 
-		.sfwd-courses,
-		.x-column {
+			.sfwd-courses,
+			.x-column {
 			// cs does an inline style for these
 			padding-left: $gutter !important;
 			padding-right: $gutter !important;
@@ -181,4 +183,5 @@
 			font-weight: font-weight('light');
 		}
 	}
+}
 }
