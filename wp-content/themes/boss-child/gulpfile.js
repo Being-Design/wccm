@@ -6,6 +6,7 @@ var mainBowerFiles = require('main-bower-files');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var cssmin = require('gulp-clean-css');
+var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 
 
@@ -55,7 +56,9 @@ gulp.task('bower', [
 gulp.task('css:compile', function() {
 	return gulp.src(path.cssIn + '/main.scss')
 	.pipe(plumber())
-	.pipe( sass() )
+  .pipe(sourcemaps.init())
+	.pipe( sass().on('error', sass.logError) )
+  .pipe(sourcemaps.write())
 	.pipe( gulp.dest(path.cssOut) );
 });
 

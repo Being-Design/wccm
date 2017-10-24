@@ -25,9 +25,29 @@ h6 {
 	color: $theme-color;
 }
 
-h4,
-h5 {
+h1 { 
+	@include font-px(60);
+}
+h2 {
+	@include font-px(42.5);
+}
+h3 {
+	@include font-px(30);
+}
+h4 {
+	@include font-px(25);
 	font-family: $body-font;
+}
+h5 {
+	@include font-px(18);
+	text-transform: uppercase; 
+	letter-spacing: 0.1rem;
+	font-family: $body-font;
+}
+h6 {
+	@include font-px(18);
+	text-transform: uppercase; 
+	letter-spacing: 0.1rem;
 }
 
 a {

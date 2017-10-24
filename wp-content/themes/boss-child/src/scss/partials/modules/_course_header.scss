@@ -1,13 +1,48 @@
 .course-header {
+	background: color('snow') url( #{$path-images + '/white-marble-texture.jpg'} );
+	background-size: cover;
+	color: $theme-dark;
+
+	> * {
+		position: relative;
+		z-index: 1;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		background-color: rgba( #e6eff3, 0.85 );
+	}
+
+	.single-sfwd-courses & .content > span {
+		@extend h5;
+		display: block;
+		margin-bottom: 10px;
+		color: $theme-color;
+		@include font-px(12);
+		font-weight: font-weight('bold');
+	}
+
+	.single-sfwd-courses article & {
+		p,
+		header h1 {
+			color: inherit;
+		}
+	}
 	
 	.progress-wrap {
-		color: color('silver');
+		color: color('gray-border');
 
 		.course_progress {
-			background-color: color('silver');
+			background-color: color('progress-gray');
 
 			.course_progress_blue { // not actually blue
-				background-color: $highlight1;
+				background-color: $highlight2;
 			}
 		}
 	} 
