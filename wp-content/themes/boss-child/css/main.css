@@ -486,6 +486,7 @@ body.is-mobile #mobile-header {
         line-height: inherit;
         color: #0b5394;
         font-weight: 400;
+        text-decoration: none;
         font-size: 14px;
         font-size: 1.4rem;
         text-transform: uppercase;
@@ -693,6 +694,7 @@ body.is-mobile #mobile-header {
 
 .entry-content #cs-content .x-promo {
   border: none;
+  border-radius: 0;
   box-shadow: none; }
   .entry-content #cs-content .x-promo .x-promo-image-wrap img {
     border: #595959 1px solid; }
@@ -706,6 +708,8 @@ body.is-mobile #mobile-header {
     font-size: inherit; }
     .entry-content #cs-content .x-promo a:not(.x-btn):hover, .entry-content #cs-content .x-promo a:not(.x-btn):focus, .entry-content #cs-content .x-promo a:not(.x-btn):active {
       color: #0c343d; }
+    .entry-content #cs-content .x-promo a:not(.x-btn) p {
+      margin: 0; }
 
 .entry-content #cs-content .x-promo-content {
   padding: 0;

@@ -35,6 +35,7 @@
 				line-height: inherit;
 				color: $nav-link-color;
 				font-weight: font-weight('normal');
+				text-decoration: none;
 				@include font-px(14);
 				@include text-uppercase;
 

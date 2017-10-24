@@ -90,6 +90,7 @@
 
 	.x-promo {
 		border: none;
+		border-radius: 0;
 		box-shadow: none;
 
 		.x-promo-image-wrap img {
@@ -110,6 +111,10 @@
 			&:focus,
 			&:active {
 				color: $theme-dark;
+			}
+
+			p {
+				margin: 0;
 			}
 		}
 	}
