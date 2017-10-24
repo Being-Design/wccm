@@ -10,34 +10,34 @@ body {
 	@include font-px(20);
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-// 	padding: 0;
-// 	margin: 0;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
 
-// h1 { 
-// 	@include font-px(36);
-// }
-// h2 {
-// 	@include font-px(28);
-// }
-// h3 {
-// 	@include font-px(20);
-// }
-// h4 {
-// 	@include font-px(16);
-// }
-// h5 {
-// 	@include font-px(14);
-// }
-// h6 {
-// 	@include font-px(14);
-// }
+h1 { 
+	@include font-px(60);
+}
+h2 {
+	@include font-px(42.5);
+}
+h3 {
+	@include font-px(30);
+}
+h4 {
+	@include font-px(25);
+}
+h5 {
+	@include font-px(18);
+}
+h6 {
+	@include font-px(18);
+}
 
 // label {
 // 	cursor: pointer;

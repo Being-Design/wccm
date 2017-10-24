@@ -140,6 +140,10 @@ $nav-height: 75px;
 		}
 	}
 
+	a {
+		text-decoration: none;
+	}
+
 	// centers nav on tablet+
 	@include media(md) {
 

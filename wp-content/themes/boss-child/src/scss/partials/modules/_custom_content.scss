@@ -1,34 +1,53 @@
 .entry-content #cs-content {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		padding: 0;
+		margin: 0;
+	}
+
+	h1 { 
+		@include font-px(60);
+	}
+	h2 {
+		@include font-px(42.5);
+	}
+	h3 {
+		@include font-px(30);
+	}
+	h4 {
+		@include font-px(25);
+	}
+	h5 {
+		@include font-px(18);
+	}
+	h6 {
+		@include font-px(18);
+	}
 	
 	#top {
 
 		h1, 
 		h4 {
 			color: $theme-color;
+			margin: 0;
 		}
 	}
 
-	.x-container.max.width {
-		margin-top: 50px;
-		margin-bottom: 75px;
+	h1,
+	h2 {
+
+		&.h-custom-headline {
+			margin-bottom: 0.5em;
+		}
 	}
 
-	h3 {
+	h3.h-custom-headline.accent span {
 		margin: 35px 0 75px;
-	}
-
-	.x-blockquote:not(.x-pullquote) {
-		border: none;
-		@include font-px(30);
-		line-height: 150%;
-		margin: 0 auto;
-
-		&:first-letter {
-			font-size: 2em;
-		}
-	}
-
-	.h-custom-headline.accent span {
 		@include font-px(30);
 
 		&:before {
@@ -44,6 +63,26 @@
 			margin-top: 0;
 			border-bottom: none;
 			border-color: $theme-color;
+		}
+	}
+
+	.x-text h3 {
+		margin: 15px 0 5px;
+	}
+
+	.x-container.max.width {
+		margin-top: 50px;
+		margin-bottom: 75px;
+	}
+
+	.x-blockquote:not(.x-pullquote) {
+		border: none;
+		@include font-px(30);
+		line-height: 150%;
+		margin: 0 auto;
+
+		&:first-letter {
+			font-size: 2em;
 		}
 	}
 

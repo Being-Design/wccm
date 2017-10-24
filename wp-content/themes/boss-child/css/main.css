@@ -20,6 +20,39 @@ body {
   font-size: 20px;
   font-size: 2rem; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-size: 60px;
+  font-size: 6rem; }
+
+h2 {
+  font-size: 42.5px;
+  font-size: 4.25rem; }
+
+h3 {
+  font-size: 30px;
+  font-size: 3rem; }
+
+h4 {
+  font-size: 25px;
+  font-size: 2.5rem; }
+
+h5 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+h6 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
 .center-margin {
   margin-left: auto;
   margin-right: auto; }
@@ -47,6 +80,10 @@ h6 {
 .entry-content h1 {
   color: #45818e; }
 
+h4,
+h5 {
+  font-family: "Alegreya Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 a,
 .entry-content a {
   color: #A44734;
@@ -56,7 +93,7 @@ a,
   .entry-content a:focus,
   .entry-content a:hover,
   .entry-content a:active {
-    color: #6a2e22; }
+    color: #753225; }
 
 .btn,
 a.btn,
@@ -381,6 +418,8 @@ a.button,
     font-size: 14px;
     font-size: 1.4rem;
     font-weight: 300; }
+  #header-main a {
+    text-decoration: none; }
   @media screen and (min-width: 992px) {
     #header-main .header-inner .left-col {
       width: 100%;
@@ -630,16 +669,69 @@ body.is-mobile #mobile-header {
     .course-header .progress-wrap .course_progress .course_progress_blue {
       background-color: #f1c232; }
 
+.entry-content #cs-content h1,
+.entry-content #cs-content h2,
+.entry-content #cs-content h3,
+.entry-content #cs-content h4,
+.entry-content #cs-content h5,
+.entry-content #cs-content h6 {
+  padding: 0;
+  margin: 0; }
+
+.entry-content #cs-content h1 {
+  font-size: 60px;
+  font-size: 6rem; }
+
+.entry-content #cs-content h2 {
+  font-size: 42.5px;
+  font-size: 4.25rem; }
+
+.entry-content #cs-content h3 {
+  font-size: 30px;
+  font-size: 3rem; }
+
+.entry-content #cs-content h4 {
+  font-size: 25px;
+  font-size: 2.5rem; }
+
+.entry-content #cs-content h5 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+.entry-content #cs-content h6 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
 .entry-content #cs-content #top h1,
 .entry-content #cs-content #top h4 {
-  color: #45818e; }
+  color: #45818e;
+  margin: 0; }
+
+.entry-content #cs-content h1.h-custom-headline,
+.entry-content #cs-content h2.h-custom-headline {
+  margin-bottom: 0.5em; }
+
+.entry-content #cs-content h3.h-custom-headline.accent span {
+  margin: 35px 0 75px;
+  font-size: 30px;
+  font-size: 3rem; }
+  .entry-content #cs-content h3.h-custom-headline.accent span:before {
+    margin-right: 50%; }
+  .entry-content #cs-content h3.h-custom-headline.accent span:after {
+    margin-left: 50%; }
+  .entry-content #cs-content h3.h-custom-headline.accent span:before, .entry-content #cs-content h3.h-custom-headline.accent span:after {
+    width: 175px;
+    height: 0;
+    margin-top: 0;
+    border-bottom: none;
+    border-color: #45818e; }
+
+.entry-content #cs-content .x-text h3 {
+  margin: 15px 0 5px; }
 
 .entry-content #cs-content .x-container.max.width {
   margin-top: 50px;
   margin-bottom: 75px; }
-
-.entry-content #cs-content h3 {
-  margin: 35px 0 75px; }
 
 .entry-content #cs-content .x-blockquote:not(.x-pullquote) {
   border: none;
@@ -649,20 +741,6 @@ body.is-mobile #mobile-header {
   margin: 0 auto; }
   .entry-content #cs-content .x-blockquote:not(.x-pullquote):first-letter {
     font-size: 2em; }
-
-.entry-content #cs-content .h-custom-headline.accent span {
-  font-size: 30px;
-  font-size: 3rem; }
-  .entry-content #cs-content .h-custom-headline.accent span:before {
-    margin-right: 50%; }
-  .entry-content #cs-content .h-custom-headline.accent span:after {
-    margin-left: 50%; }
-  .entry-content #cs-content .h-custom-headline.accent span:before, .entry-content #cs-content .h-custom-headline.accent span:after {
-    width: 175px;
-    height: 0;
-    margin-top: 0;
-    border-bottom: none;
-    border-color: #45818e; }
 
 .entry-content #cs-content .cs-ta-center form {
   margin: 0 auto; }

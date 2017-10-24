@@ -25,6 +25,7 @@ $palette: (
 	'purple-text':		#20124d,
 	'purple-light':		#674ea7,
 	'terra-cotta':		#A44734,
+	'red-dark':				#753225,
 	'teal-dark': 			#0c343d,
 	'gray-lessons':		#f1f4f9,
 	'gray-topics':		#e4ebf3,
@@ -82,7 +83,7 @@ $theme-dark: color('teal-dark') !default;
 $theme-text: color('jet') !default;
 $theme-grey: color('snow') !default;
 $theme-link: color('terra-cotta') !default;
-$theme-link-hover: darken(color('terra-cotta'), 15%) !default;
+$theme-link-hover: color('red-dark') !default;
 $highlight1: color('gold-fill') !default;
 $highlight1-hover: color('gold-fill-dark') !default;
 $highlight2: color('orange-fill') !default;
