@@ -92,15 +92,45 @@
 		border: none;
 		box-shadow: none;
 
+		.x-promo-image-wrap img {
+			border: $border-color 1px solid;
+		}
+
+		h3 {
+			color: inherit;
+			@include font-px(24);
+			margin: 0;
+		}
+
 		a:not(.x-btn) {
 			color: $theme-color;
-			@include font-px(24);
+			font-size: inherit;
 
 			&:hover,
 			&:focus,
 			&:active {
 				color: $theme-dark;
 			}
+		}
+	}
+
+	.x-promo-content {
+		padding: 0;
+		@include font-px(16);
+
+		b,
+		i,
+		a,
+		strong,
+		p {
+			font-size: inherit;
+		}
+
+		.x-btn {
+			margin-top: 10px;
+			padding: 5px 40px;
+			@include font-px(18);
+			font-weight: font-weight('light');
 		}
 	}
 }

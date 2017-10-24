@@ -28,6 +28,7 @@ $palette: (
 	'teal-dark': 			#0c343d,
 	'gray-lessons':		#f1f4f9,
 	'gray-topics':		#e4ebf3,
+	'gray-border':		#595959,
 	);
 
 
@@ -89,6 +90,7 @@ $nav-link-color: color('blue-fill') !default;
 $nav-link-hover: color('silver') !default;
 $table-bg-lessons: color('gray-lessons') !default;
 $table-bg-topics: color('gray-topics') !default;
+$border-color: color('gray-border');
 
 // block elements
 $border-radius: 4px !default;

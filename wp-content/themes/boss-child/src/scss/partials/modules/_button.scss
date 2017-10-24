@@ -27,6 +27,7 @@ a.button,
 	&:focus,
 	&:active {
 		border-color: $btn-hover;
+		border-width: 2px;
 		background-color: $btn-hover;
 		text-shadow: none;
 		box-shadow: none;
