@@ -123,6 +123,11 @@ function bd_theme_settings_page() {
         <td><input type="checkbox" name="display_groups_in_profile" <?php if ( get_option('display_groups_in_profile') ) echo 'checked'; ?> value="true" /></td>
       </tr>
 
+      <tr valign="top">
+        <th scope="row">Display utility nav below header in Profile</th>
+        <td><input type="checkbox" name="display_item_nav_in_profile" <?php if ( get_option('display_item_nav_in_profile') ) echo 'checked'; ?> value="true" /></td>
+      </tr>
+
     </table>
 
     <?php submit_button(); ?>
@@ -140,6 +145,7 @@ function register_bdsettings() {
   register_setting( 'bd-options-group', 'alternate_profile_layout' );
   register_setting( 'bd-options-group', 'hide_profile_stats' );
   register_setting( 'bd-options-group', 'display_groups_in_profile' );
+  register_setting( 'bd-options-group', 'display_item_nav_in_profile' );
   
 }
 

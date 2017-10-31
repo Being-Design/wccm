@@ -1,0 +1,46 @@
+body.profile #item-body {
+	padding-top: 15px;
+
+	div#subnav.item-list-tabs {
+		margin: 0 0 15px;
+
+		ul li a {
+			line-height: 100%;
+			@include font-px(14);
+		}
+	}
+
+	.profile {
+
+		.bp-widget {
+			margin-bottom: 50px;
+		}
+
+		h4 {
+			line-height: 100%;
+			@include font-px(18);
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			border-bottom: color('jet') 1px solid;
+		}
+
+		// table
+		.profile-fields {
+			margin-bottom: 0;
+			border: none;
+
+			tr td {
+				padding-left: 0 !important; // bp uses an !important
+				border: none;
+				color: color('theme-dark');
+				@include font-px(14);
+
+				&.label {
+					text-transform: uppercase;
+					font-weight: font-weight('bold');
+				}
+			}
+		}
+	}
+	
+}

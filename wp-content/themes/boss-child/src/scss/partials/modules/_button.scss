@@ -5,8 +5,7 @@ a.button,
 #cs-content.cs-content .x-btn,
 #cs-content.cs-content .x-btn.x-btn-flat,
 #cs-content.cs-content .x-btn.x-btn-transparent,
-#cs-content.cs-content .x-btn.x-btn-real,
-.social-learner .sfwd-courses a.button {
+#cs-content.cs-content .x-btn.x-btn-real {
 	$btn-color: $theme-color !default;
 	$btn-hover: $theme-dark !default;
 	$btn-padding: 14px !default;
@@ -38,7 +37,8 @@ a.button,
 	}
 
 	&.btn-transparent,
-	&.inverse {
+	&.inverse,
+	.social-learner .sfwd-courses & {
 		color: inherit;
 		background: transparent;
 		padding: $btn-padding;
