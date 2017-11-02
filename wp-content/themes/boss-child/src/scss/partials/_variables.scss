@@ -85,11 +85,17 @@ $theme-text: color('jet') !default;
 $theme-grey: color('snow') !default;
 $theme-link: color('terra-cotta') !default;
 $theme-link-hover: color('red-dark') !default;
+
 $highlight1: color('gold-fill') !default;
 $highlight1-hover: color('gold-fill-dark') !default;
 $highlight2: color('orange-fill') !default;
+
 $nav-link-color: color('blue-fill') !default;
 $nav-link-hover: color('silver') !default;
+$mobile-nav-bg: color('platinum-blue');
+$mobile-nav-hover: color('silver-blue');
+$mobile-nav-border: #c1d0d3;
+
 $table-bg-lessons: color('gray-lessons') !default;
 $table-bg-topics: color('gray-topics') !default;
 $border-color: color('gray-border');

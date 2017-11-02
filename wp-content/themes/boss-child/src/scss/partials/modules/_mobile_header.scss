@@ -3,5 +3,11 @@ body.is-mobile #mobile-header {
 
 	a {
 		color: color('white');
+
+		&:active,
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
 	}
 }

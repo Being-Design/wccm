@@ -22,35 +22,37 @@ body.is-mobile {
 
 	#mobile-menu.menu-panel,
 	#left-panel.menu-panel {
-		background-color: color('purple-fill');
+		background-color: $mobile-nav-bg;
+		padding-top: 0;
 
 		#header-menu,
 		#left-panel-inner {
 			a {
-				color: color('silver');
+				color: $theme-dark;
+				border-bottom: $mobile-nav-border 1px solid;
 
 				&:before {
-					color: color('jet');
+					color: inherit;
 				}
 
 				&,
 				&:before {
-					transition: color $trans-time;
+					transition: background $trans-time;
 				}
 
 				&:hover,
 				&:focus,
 				&:active {
-					color: color('white');
+					background-color: $mobile-nav-hover;
 
 					&:before {
-						color: color('silver');
+						color: inherit;
 					}
 				}
 			}
 
 			.dropdown .ab-sub-wrapper {
-				background-color: color('jet');
+				background-color: $mobile-nav-bg;
 			}
 		}
 	}
