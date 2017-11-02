@@ -25,6 +25,16 @@ body.is-mobile {
 		background-color: $mobile-nav-bg;
 		padding-top: 0;
 
+		&.hide-icons {
+
+			#header-menu,
+			#left-panel-inner {
+				a:before {
+					display: none;
+				}
+			}
+		}
+
 		#header-menu,
 		#left-panel-inner {
 			a {
