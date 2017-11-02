@@ -33,7 +33,8 @@ body.bd-hide-left-bar #right-panel-inner {
 	margin-left: 0;
 }
 
-#main.wrapper {
+#item-body,
+.bp-legacy div#item-body {
 	max-width: $container-max-width;
 	margin: 0 auto;
 }
