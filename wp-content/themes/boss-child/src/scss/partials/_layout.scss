@@ -32,3 +32,8 @@
 body.bd-hide-left-bar #right-panel-inner {
 	margin-left: 0;
 }
+
+#main.wrapper {
+	max-width: $container-max-width;
+	margin: 0 auto;
+}

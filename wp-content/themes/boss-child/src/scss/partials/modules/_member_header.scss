@@ -32,7 +32,9 @@
 			}
 
 			div {
-				background-color: color('blue-light');
+				background-color: $theme-color;
+				@include font-px(16);
+				color: color('white');
 			}
 		}
 

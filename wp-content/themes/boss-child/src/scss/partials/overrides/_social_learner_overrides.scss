@@ -7,8 +7,12 @@ body.social-learner {
 	#course-details {
 		position: relative;
 		margin-top: -84px;
-
+		padding-bottom: 0;
 		background: transparent;
+	}
+
+	#secondary {
+		border-left: $theme-dark 2px solid !important;
 	}
 
 	#students,
