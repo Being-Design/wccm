@@ -53,6 +53,12 @@ function boss_child_theme_scripts_styles()
 }
 add_action( 'wp_enqueue_scripts', 'boss_child_theme_scripts_styles', 9999 );
 
+/**
+**  CUSTOM SHORTCODES
+**/
+include 'shortcodes/current_user.php';
+include 'shortcodes/personal_link.php';
+
 
 /****************************** CUSTOM FUNCTIONS ******************************/
 
