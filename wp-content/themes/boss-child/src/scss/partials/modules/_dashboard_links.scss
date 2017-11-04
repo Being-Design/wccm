@@ -1,0 +1,15 @@
+.entry-content .personal-link-card {
+	display: block;
+	padding: 20px;
+	background: $mobile-nav-bg;
+	border: $mobile-nav-border 1px solid;
+	text-decoration: none;
+	transition: background-color $trans-time;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: $mobile-nav-hover;
+		text-decoration: none;
+	}
+}
