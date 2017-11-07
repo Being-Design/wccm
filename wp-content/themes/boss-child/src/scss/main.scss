@@ -10,6 +10,7 @@
 
 // Modules
 @import "partials/modules/button";
+@import "partials/modules/forms";
 @import "partials/modules/header_main";
 @import "partials/modules/panels";
 @import "partials/modules/mobile_header";
@@ -25,3 +26,5 @@
 
 // WP Overrides
 @import "partials/overrides/social_learner_overrides";
+@import "partials/overrides/woocommerce_overrides";
+@import "partials/overrides/form_overrides";

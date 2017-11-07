@@ -1,0 +1,26 @@
+form {
+	[type=text],
+	[type=password],
+	[type=email],
+	[type=number],
+	textarea,
+	select,
+	.select2-container {
+		@include font-px(20);
+		background-color: $mobile-nav-bg;
+
+		&:focus {
+			background-color: $mobile-nav-hover;
+		}
+	}
+
+	.select2-container  {
+
+		&--focus {
+
+			.select2-selection {
+				background-color: $mobile-nav-hover;
+			}
+		}
+	}
+}

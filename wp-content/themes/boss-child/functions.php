@@ -175,6 +175,7 @@ function register_bdsettings() {
 // Add any custom settings to body class
 add_filter('body_class', 'bdsettings_body_classes');
 function bdsettings_body_classes($classes) {
+  $classes[] = 'beingdesign-override';
   $classes[] = get_option('hide_left_bar') ? 'bd-hide-left-bar' : '';
   return $classes;
 }

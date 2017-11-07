@@ -10,6 +10,12 @@ a.button,
 	$btn-hover: $theme-dark !default;
 	$btn-padding: 14px !default;
 
+	@mixin not-disabled() {
+		&:not([disabled]):not(.disabled):not(:disabled) {
+			@content;
+		}
+	}
+
 	border: $btn-color 2px solid;
 	background: $btn-color;
 	color: color('white');
@@ -27,13 +33,24 @@ a.button,
 	&:hover,
 	&:focus,
 	&:active {
-		border-color: $btn-hover;
-		color: color('white');
-		border-width: 2px;
-		background-color: $btn-hover;
-		text-shadow: none;
-		box-shadow: none;
-		text-decoration: none;
+
+		@include not-disabled {
+			border-color: $btn-hover;
+			color: color('white');
+			border-width: 2px;
+			background-color: $btn-hover;
+			text-shadow: none;
+			box-shadow: none;
+			text-decoration: none;
+		}
+	}
+
+	&[disabled],
+	&.disabled,
+	&:disabled {
+		cursor: not-allowed;
+		background-color: $theme-grey;
+		color: color('black');
 	}
 
 	&.btn-transparent,
@@ -46,9 +63,12 @@ a.button,
 		&:hover,
 		&:focus,
 		&:active {
-			background-color: $btn-hover;
-			border-color: $btn-hover;
-			color: color('white');
+
+			@include not-disabled {
+				background-color: $btn-hover;
+				border-color: $btn-hover;
+				color: color('white');
+			}
 		}
 	}
 
@@ -63,8 +83,11 @@ a.button,
 		&:hover,
 		&:focus,
 		&:active {
-			border-color: $btn-hover;
-			background-color: $btn-hover;
+
+			@include not-disabled {
+				border-color: $btn-hover;
+				background-color: $btn-hover;
+			}
 		}
 
 		&.btn-transparent {
@@ -75,7 +98,10 @@ a.button,
 			&:hover,
 			&:focus,
 			&:active {
-				background-color: $btn-hover;
+
+				@include not-disabled {
+					background-color: $btn-hover;
+				}
 			}
 		}
 	}
@@ -91,7 +117,9 @@ a.button,
 		&:hover,
 		&:focus,
 		&:active {
-			background-color: $btn-hover;
+			@include not-disabled {
+				background-color: $btn-hover;
+			}
 		}
 
 		&.btn-transparent {
@@ -101,8 +129,10 @@ a.button,
 			&:hover,
 			&:focus,
 			&:active {
-				color: color('black');
-				background-color: color('white');
+				@include not-disabled {
+					color: color('black');
+					background-color: color('white');
+				}
 			}
 		}
 	}

@@ -1,0 +1,18 @@
+.beingdesign-override.woocommerce-page {
+	
+	input.button:disabled,
+	.woocommerce input.button:disabled[disabled] {
+		cursor: not-allowed;
+		background-color: $mobile-nav-bg;
+		color: color('jet');
+		opacity: 0.5;
+
+		&:hover {
+			box-shadow: none;
+		}
+	}
+
+	.buddyboss-select-inner {
+		@include sr-only;
+	}
+}
