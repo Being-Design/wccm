@@ -234,14 +234,14 @@ global $class,$groups_template;
                                             </a>
                                         </li>
 
-                                        <?php if ( $group_status !== '' ) : ?>
-                                        <?php /*<!-- meditation log link -->
+                                        <?php /* if ( $group_status !== '' ) : ?>
+                                        <!-- meditation log link -->
                                         <li id="meditation-log" class="<?php echo $log_is_current ? $current_class : ''; ?>">
                                             <a href="<?php echo $group_slug . '/meditations/'; ?>">
                                             <?php _e( 'Meditation Log', 'boss-learndash' ); ?>
                                             </a>
-                                        </li> /*/?>
-                                        <?php endif; ?>
+                                        </li> /
+                                        <?php endif; */ ?>
 
                                     </ul>
                             </div>

@@ -1,4 +1,5 @@
 #colophon {
+	@include font-px(16);
 	
 	.widget-area .widget .textwidget {
 		color: color('white');
