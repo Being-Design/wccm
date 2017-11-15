@@ -44,4 +44,11 @@
 			background-color: $alert-color;
 		}
 	}
+
+	// adds border to address field on orders page
+	.woocommerce-column__title,
+	address {
+		border: 1px solid rgba(color('black'), .1);
+		padding: 10px;
+	}
 }
