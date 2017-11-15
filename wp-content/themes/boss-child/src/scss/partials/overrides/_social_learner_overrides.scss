@@ -27,7 +27,7 @@
 
 		> .vc_col-sm-12 {
 
-			&, 
+			&,
 			* {
 				font-family: $body-font;
 			}
@@ -88,5 +88,16 @@
 
 	#learndash_course_status {
 		border: none;
+	}
+
+	// Edit-profile links were too small
+	#learndash_lesson_topics_list div ul>li .sn,
+	#learndash_lesson_topics_list div>strong,
+	#learndash_profile a,
+	#learndash_profile div,
+	.expand_collapse,
+	.learndash_profile_heading,
+	.notavailable_message {
+		@include font-px(16);
 	}
 }
