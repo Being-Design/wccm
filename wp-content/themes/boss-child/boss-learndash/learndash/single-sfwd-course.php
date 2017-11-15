@@ -190,22 +190,28 @@ get_header();
 								<div role="navigation" id="object-nav" class="item-list-tabs no-ajax">
 									<ul>
 
+										<?php
+                      $url_course = '#';
+                      $url_forum = $group_slug . '/forum/';
+                      $url_members = $group_slug . '/members/';
+                    ?>
+
 										<li id="groups-home" class="current selected">
-											<a href="#">
+											<a href="<?php echo $url_course; ?>">
 												<?php echo LearnDash_Custom_Label::get_label( 'course' ); ?>
 											</a>
 										</li>
 
 										<?php if ( function_exists( 'bbpress' ) && !empty( $group_data->enable_forum ) ): ?>
 											<li id="groups-forum">
-												<a href="<?php echo $group_slug . '/forum/'; ?>">
+												<a href="<?php echo $url_forum; ?>">
 													<?php _e( 'Forum', 'boss-learndash' ); ?>
 												</a>
 											</li>
 										<?php endif; ?>
 
 										<li id="groups-members">
-											<a href="<?php echo $group_slug . '/home/'; ?>">
+											<a href="<?php echo $url_members; ?>">
 												<?php _e( 'Members', 'boss-learndash' ); ?>
 											</a>
 										</li>

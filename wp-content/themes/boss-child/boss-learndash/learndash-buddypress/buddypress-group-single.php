@@ -208,30 +208,35 @@ $logged_in = !empty($user_id);
                                             $group_slug = '/groups/' . $bp->groups->current_group->slug;
                                             $member_count = $bp->groups->current_group->__get('total_member_count');
 
-                                            $home_is_current = false;
-                                            $forum_is_current = $_SERVER['REQUEST_URI'] === $group_slug . '/forum/';
-                                            $members_is_current = $_SERVER['REQUEST_URI'] === $group_slug . '/';
-                                            $log_is_current = $_SERVER['REQUEST_URI'] === $group_slug . '/meditations/';
+                                            $url_current = $_SERVER['REQUEST_URI'];
                                             $current_class = 'current selected';
+
+                                            $url_course = $group_slug . '/experiences/';
+                                            $url_forum = $group_slug . '/forum/';
+                                            $url_members = $group_slug . '/members/';
+
+                                            $home_is_current = false;
+                                            $course_is_current = $url_current === $url_course;
+                                            $forum_is_current = $url_current === $url_forum;
+                                            $members_is_current = $url_current === $url_members;
                                         ?>
 
-                                        <!-- $group_status: <?php var_dump( $group_status ); ?> -->
                                         <?php if ( $group_status !== '' ) : ?>
-                                        <li id="groups-home" class="<?php echo $home_is_current ? $current_class : '' ?>">
-                                            <a href="<?php echo $group_slug . '/experiences'; ?>">
+                                        <li id="groups-home" class="<?php echo $course_is_current ? $current_class : '' ?>">
+                                            <a href="<?php echo $url_course; ?>">
                                             <?php _e( 'Course', 'boss-learndash' ); ?>
                                             </a>
                                         </li>
                                         <?php endif; ?>
 
                                         <li id="groups-forum" class="<?php echo $forum_is_current ? $current_class : ''; ?>">
-                                            <a href="<?php echo $group_slug . '/forum'; ?>">
+                                            <a href="<?php echo $url_forum; ?>">
                                             <?php _e( 'Forum', 'boss-learndash' ); ?>
                                             </a>
                                         </li>
 
                                         <li id="groups-members" class="<?php echo $members_is_current ? $current_class : ''; ?>">
-                                            <a href="<?php echo $group_slug . '/'; ?>">
+                                            <a href="<?php echo $url_members; ?>">
                                             <?php _e( 'Members', 'boss-learndash' ); ?>
                                             </a>
                                         </li>

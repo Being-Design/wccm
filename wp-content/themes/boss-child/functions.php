@@ -57,10 +57,10 @@ add_action( 'wp_enqueue_scripts', 'boss_child_theme_scripts_styles', 9999 );
 /**
 **  Override boss-learndash/learndash-buddypress templates
 **/
-// function meditatio_override_learndash_buddypress_templates() {
-//   return get_stylesheet_directory() . '/boss-learndash';
-// }
-// add_filter( 'boss_edu_course_group_template_path', 'meditatio_override_learndash_buddypress_templates' );
+function meditatio_override_learndash_buddypress_templates() {
+  return get_stylesheet_directory() . '/boss-learndash';
+}
+add_filter( 'boss_edu_course_group_template_path', 'meditatio_override_learndash_buddypress_templates' );
 
 
 /**
