@@ -32,4 +32,16 @@
 	.entry-content table {
 		@include font-px(20);
 	}
+
+	// remove button should be theme red
+	// woocommerce CSS uses an !important
+	.woocommerce a.remove {
+		color: $alert-color !important;
+		text-decoration: none;
+
+		&:hover {
+			color: color('white') !important;
+			background-color: $alert-color;
+		}
+	}
 }
