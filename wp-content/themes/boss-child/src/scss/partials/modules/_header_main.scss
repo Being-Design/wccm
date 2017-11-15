@@ -158,6 +158,14 @@ $nav-height: 75px;
 
 }
 
+.menu-custom-profile-menu-container {
+
+	a:hover,
+	a:focus {
+		background-color: $profile-nav-hover;
+	}
+}
+
 @include media(xs) {
 	body {
 		margin-top: $logo-height + $nav-height;
