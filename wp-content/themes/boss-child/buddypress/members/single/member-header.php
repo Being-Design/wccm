@@ -134,7 +134,7 @@ if(boss_get_option('boss_cover_profile')) {
                 </div><!-- #item-header-content -->
             </div>
 
-            <div class="table-cell">
+            <div class="member-actions-container table-cell">
 
 				<?php
 				$showing = null;
@@ -245,17 +245,7 @@ if(boss_get_option('boss_cover_profile')) {
 						if ( !empty( $action_output ) ): //only show if output exists
 							?>
 
-							<!-- more items -->
-							<span class="single-member-more-actions">
-								<button class="more-items-btn btn"><i class="fa fa-ellipsis-h"></i></button>
-
-								<!--popup-->
-								<div class="pop">
-									<div class="inner">
-										<?php echo $action_output; ?>
-									</div>
-								</div>
-							</span>
+							<?php echo $action_output; ?>
 
 						<?php endif; ?>
 

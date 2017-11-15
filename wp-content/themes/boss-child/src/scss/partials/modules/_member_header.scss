@@ -19,6 +19,25 @@
 		.sep {
 			display: none;
 		}
+
+		// sorry - needed to override and there's no
+		.member-actions-container {
+			display: block;
+
+			.primary-btn {
+				display: block;
+			}
+
+			.generic-button a {
+				width: 100%;
+				max-width: none;
+				@include font-px(18);
+			}
+
+			#item-buttons .primary-btn .generic-button a {
+				border-radius: $border-radius;
+			}
+		}
 	}
 
 	.bb-cover-photo {
@@ -127,4 +146,8 @@
 			}
 		}
 	}
+}
+
+.beingdesign-override #buddypress #item-header-cover #main-button.primary-btn .generic-button a {
+	max-width: none;
 }
