@@ -51,4 +51,9 @@
 		border: 1px solid rgba(color('black'), .1);
 		padding: 10px;
 	}
+
+	// Order page tabs were too small
+	.woocommerce-MyAccount-navigation li a {
+		@include font-px(14);
+	}
 }
