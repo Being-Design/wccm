@@ -1,5 +1,6 @@
 .beingdesign-override.woocommerce-page {
 	
+	// Disabled buttons looked wonky
 	input.button:disabled,
 	.woocommerce input.button:disabled[disabled] {
 		cursor: not-allowed;
@@ -12,7 +13,23 @@
 		}
 	}
 
+	// Duplicate custom select menus; this hides the BB variant
 	.buddyboss-select-inner {
 		@include sr-only;
+	}
+
+	// "Continue Shopping" button on checkout page
+	// Used to have blue text on blue bg
+	#content .woocommerce-message .wc-forward {
+		&,
+		&:hover,
+		&:focus {
+			color: color('white');
+		}
+	}
+
+	// Checkout table fonts were way too small
+	.entry-content table {
+		@include font-px(20);
 	}
 }
