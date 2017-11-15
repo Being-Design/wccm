@@ -13,6 +13,9 @@
  ***/
 
 get_header();
+
+$user_id = get_current_user_id();
+$logged_in = !empty( $user_id );
 ?>
 
 <div class="page-right-sidebar">
@@ -116,7 +119,6 @@ get_header();
 								<?php
 							}
 
-							$user_id = get_current_user_id();
 
 							if ( function_exists( 'learndash_get_course_certificate_link' ) ):
 								$course_certficate_link = learndash_get_course_certificate_link( $course_id, $user_id );
@@ -127,8 +129,6 @@ get_header();
 								endif;
 
 							endif;
-
-							$logged_in = !empty( $user_id );
 
 							if ( $logged_in ) {
 								?>
@@ -186,6 +186,7 @@ get_header();
 						}
 						?>
 						<div id="buddypress">
+							<?php if ($logged_in) : ?>
 							<div id="item-nav" class="course-group-nav">
 								<div role="navigation" id="object-nav" class="item-list-tabs no-ajax">
 									<ul>
@@ -234,6 +235,7 @@ get_header();
 									</ul>
 								</div>
 							</div>
+						<?php endif; ?>
 						</div><?php
 					}
 					?>
