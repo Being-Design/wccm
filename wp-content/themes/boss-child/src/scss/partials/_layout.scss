@@ -34,7 +34,8 @@ body.bd-hide-left-bar #right-panel-inner {
 }
 
 #item-body,
-.bp-legacy div#item-body {
+.bp-legacy div#item-body,
+.sfwd-courses .learndash {
 	max-width: $container-max-width;
 	margin: 0 auto;
 }

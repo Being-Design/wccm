@@ -13,6 +13,9 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 global $class,$groups_template;
+
+$user_id = get_current_user_id();
+$logged_in = !empty($user_id);
 ?>
 
 <?php if ( bp_has_groups() ) : while ( bp_groups() ) : bp_the_group(); ?>
@@ -130,7 +133,6 @@ global $class,$groups_template;
                         <?php } ?>
 
                         <?php
-                            $user_id = get_current_user_id();
 
 							if ( function_exists( 'learndash_get_course_certificate_link' ) ):
 								$course_certficate_link = learndash_get_course_certificate_link( $course_id, $user_id );
@@ -142,7 +144,6 @@ global $class,$groups_template;
 
 							endif;
 
-                            $logged_in = !empty($user_id);
                             if($logged_in) {
                                 ?>
                                 <span id='learndash_course_status'>
@@ -191,6 +192,7 @@ global $class,$groups_template;
 
                 <?php endif; ?>
 
+                <?php if ($logged_in) : ?>
                        <div id="item-nav"> <!-- moved inside #primary-->
                             <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
                                     <ul>
@@ -246,6 +248,7 @@ global $class,$groups_template;
                                     </ul>
                             </div>
                         </div><!-- #item-nav -->
+                    <?php endif; ?>
 
                         <div id="item-body">
 
