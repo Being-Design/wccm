@@ -62,6 +62,17 @@ function meditatio_override_learndash_buddypress_templates() {
 }
 add_filter( 'boss_edu_course_group_template_path', 'meditatio_override_learndash_buddypress_templates' );
 
+/**
+**  Override WooCommerce dashboard tab title
+**/
+function rewrite_woocommerce_dashboard($items) {
+  if($items['dashboard']) {
+    $items['dashboard'] = 'My Account';
+  }
+  return $items;
+}
+add_filter('woocommerce_account_menu_items', 'rewrite_woocommerce_dashboard');
+
 
 /**
 **  CUSTOM SHORTCODES
