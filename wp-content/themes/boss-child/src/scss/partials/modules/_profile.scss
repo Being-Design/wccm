@@ -6,7 +6,7 @@ body.profile #item-body {
 
 		ul li a {
 			line-height: 100%;
-			@include font-px(16);
+			@include font-px(20);
 		}
 	}
 
@@ -18,7 +18,7 @@ body.profile #item-body {
 
 		h4 {
 			line-height: 100%;
-			@include font-px(18);
+			@include font-px(20);
 			margin-bottom: 15px;
 			padding-bottom: 15px;
 			border-bottom: color('jet') 1px solid;
@@ -33,7 +33,7 @@ body.profile #item-body {
 				padding-left: 0 !important; // bp uses an !important
 				border: none;
 				color: color('theme-dark');
-				@include font-px(14);
+				@include font-px(20);
 
 				&.label {
 					text-transform: uppercase;
