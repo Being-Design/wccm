@@ -121,8 +121,8 @@ $logged_in = !empty($user_id);
                         <?php
                         $course_id = $post->ID;
                         $total_lessons = learndash_get_course_lessons_list($course_id);
+                        $total_lessons = is_array( $total_lessons ) ? count( $total_lessons ) : 0;
                         printf( _n( '%s '.LearnDash_Custom_Label::get_label( 'lesson' ), '%s '.LearnDash_Custom_Label::get_label( 'lessons' ), $total_lessons, 'boss-learndash' ), count($total_lessons) );
-
                         ?>
                     </span>
                     <div class="course-buttons">
