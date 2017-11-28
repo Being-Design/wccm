@@ -190,3 +190,13 @@ function bdsettings_body_classes($classes) {
   $classes[] = get_option('hide_left_bar') ? 'bd-hide-left-bar' : '';
   return $classes;
 }
+
+
+// Edit WooCommerce Checkout Fields
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+function custom_override_checkout_fields( $fields ) {
+  $fields['billing']['billing_email']['class'] = array('form-row-wide');
+  // var_dump( $fields['billing']['billing_postcode'] );
+  unset($fields['billing']['billing_phone']);
+  return $fields;
+}
