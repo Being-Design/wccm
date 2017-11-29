@@ -36,6 +36,37 @@ function boss_child_theme_setup()
 }
 add_action( 'after_setup_theme', 'boss_child_theme_setup' );
 
+
+/*
+ * Ensures logged out users get taken to a login screen
+ * dev note: might cause some issues if page_ids are different on local environment
+ */
+function wccm_404fallback_redirect() {
+
+  $current_user = wp_get_current_user();
+  if ( $current_user->ID == 0 ) {
+
+      // ignore if home, about, offerings, contact, or login page. 
+      if ( !is_page(1682) && // home
+           !is_page(1578) && // about
+           !is_page(745) && // courses
+           !is_page(1583) && // resources
+           !is_page(1587) && // contact
+           !is_page(1387) && // /register/ 
+           !is_page(1390) && // /activate
+           $GLOBALS['pagenow'] !== 'wp-login.php'
+      ) {
+
+      // redirect to login page.
+      wp_redirect( home_url() . '/wp-login.php', 302 );
+    
+    }
+  }
+ 
+}
+add_action ('template_redirect', 'wccm_404fallback_redirect');
+
+
 /**
  * Enqueues scripts and styles for child theme front-end.
  *
