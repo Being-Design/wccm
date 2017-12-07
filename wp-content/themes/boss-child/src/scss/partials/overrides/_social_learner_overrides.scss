@@ -4,6 +4,22 @@
 		padding-bottom: 92px;
 	}
 
+	.course-inner p.entry-content,
+	#course_navigation .learndash_topic_widget_list a > span,
+	#course_navigation .learndash_nevigation_lesson_topics_list .lesson a,
+	.widget-area .widget_course_progress footer>span>p {
+		font-size: inherit;
+	}
+
+	#course_navigation .learndash_nevigation_lesson_topics_list .lesson a, 
+	#course_navigation .learndash_topic_widget_list a > span {
+		font-size: inherit !important;
+	}
+
+	.widget_course_progress footer h4 {
+		@include font-px(24);
+	}
+
 	#course-details {
 		position: relative;
 		margin-top: -84px;
