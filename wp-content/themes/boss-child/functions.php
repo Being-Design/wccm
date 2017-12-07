@@ -26,7 +26,7 @@ function boss_child_theme_setup()
   // load_theme_textdomain( 'boss_child_theme', get_stylesheet_directory() . '/languages' );
 
   // Allow all registered users to see private pages.
-  $role_names = array( 'subscriber', 'contributor', 'customer', 'group_leader' );
+  $role_names = array( 'subscriber', 'contributor', 'customer', 'group_leader', 'bbp_participant'  );
   foreach ( $role_names as $role_name ) {
     $role = get_role( $role_name ); 
     $role->add_cap( 'read_private_posts' );
@@ -34,7 +34,7 @@ function boss_child_theme_setup()
   }
 
 }
-add_action( 'after_setup_theme', 'boss_child_theme_setup' );
+// add_action( 'after_setup_theme', 'boss_child_theme_setup' );
 
 
 /*
