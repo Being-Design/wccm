@@ -21,20 +21,52 @@ function boss_child_theme_setup()
   // Translate text from the PARENT theme.
   load_theme_textdomain( 'boss', get_stylesheet_directory() . '/languages' );
 
-  // Translate text from the CHILD theme only.
+    // Translate text from the CHILD theme only.
   // Change 'boss' instances in all child theme files to 'boss_child_theme'.
   // load_theme_textdomain( 'boss_child_theme', get_stylesheet_directory() . '/languages' );
 
-  // Allow all registered users to see private pages.
-  $role_names = array( 'subscriber', 'contributor', 'customer', 'group_leader', 'bbp_participant'  );
-  foreach ( $role_names as $role_name ) {
-    $role = get_role( $role_name ); 
-    $role->add_cap( 'read_private_posts' );
-    $role->add_cap( 'read_private_pages' );
+}
+add_action( 'after_setup_theme', 'boss_child_theme_setup' );
+
+
+function bpdev_redirect_to_profile( $redirect_to_calculated, $redirect_url_specified, $user ) {
+
+  if ( ! $user || is_wp_error( $user ) ) {
+    return $redirect_to_calculated;
+  }
+
+  // if the redirect is not specified, assume it to be dashboard
+  if ( empty( $redirect_to_calculated ) ) {
+    $redirect_to_calculated = admin_url();
+  }
+
+  // if the user is not site admin, redirect to his/her profile
+  if ( ! is_super_admin( $user->ID ) ) {
+    return '/dashboard/';
+  } else {
+    //if site admin or not logged in, do not do anything much
+    return $redirect_to_calculated;
   }
 
 }
-// add_action( 'after_setup_theme', 'boss_child_theme_setup' );
+add_filter( 'login_redirect', 'bpdev_redirect_to_profile', 100, 3 );
+add_filter( 'bp_login_redirect', 'bpdev_redirect_to_profile', 11, 3 );
+
+
+/*
+ * Prevent non-admin users from getting to WP backend
+ */
+function wccm_no_admin_access()
+{
+  $isAjax = ( defined('DOING_AJAX') && true === DOING_AJAX ) ? true : false;
+  if( !$isAjax ) {
+    if( !current_user_can('edit_courses') ) {
+      wp_redirect( home_url() );
+      die();
+    }
+  }
+}
+add_action( 'admin_init', 'wccm_no_admin_access', 1 );
 
 
 /*
