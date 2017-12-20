@@ -96,7 +96,7 @@ function wccm_404fallback_redirect() {
   }
  
 }
-add_action ('template_redirect', 'wccm_404fallback_redirect');
+// add_action ('template_redirect', 'wccm_404fallback_redirect');
 
 
 /**
