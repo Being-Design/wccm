@@ -271,7 +271,3 @@ function custom_override_checkout_fields( $fields ) {
   unset($fields['billing']['billing_phone']);
   return $fields;
 }
-
-// Set default BuddyPress avatars
-define ( 'BP_AVATAR_DEFAULT', get_stylesheet_directory() . '/images/avatar-member.jpg' );
-define ( 'BP_AVATAR_DEFAULT_THUMB', get_stylesheet_directory() . '/images/avatar-member.jpg' );
