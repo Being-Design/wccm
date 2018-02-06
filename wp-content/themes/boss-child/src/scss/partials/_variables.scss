@@ -31,6 +31,7 @@ $palette: (
 	'gray-topics':		#e4ebf3,
 	'gray-border':		#595959,
 	'progress-gray':	#ccc,
+	'text-default':		#444,
 	);
 
 
@@ -81,7 +82,7 @@ $body-font-size: 20px;
 // colors
 $theme-color: color('teal-fill') !default;
 $theme-dark: color('teal-dark') !default;
-$theme-text: color('jet') !default;
+$theme-text: color('text-default') !default;
 $theme-grey: color('snow') !default;
 $theme-link: color('terra-cotta') !default;
 $theme-link-hover: color('red-dark') !default;
