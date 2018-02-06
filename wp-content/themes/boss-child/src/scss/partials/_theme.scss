@@ -20,6 +20,10 @@ h5,
 h6 {
 	font-family: $header-font;
 	color: $theme-dark;
+
+	b {
+		font: inherit;
+	}
 }
 
 .entry-content h1 {
