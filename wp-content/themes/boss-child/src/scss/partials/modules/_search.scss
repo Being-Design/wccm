@@ -5,4 +5,9 @@
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+
+	@include media(lg) {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
 }
