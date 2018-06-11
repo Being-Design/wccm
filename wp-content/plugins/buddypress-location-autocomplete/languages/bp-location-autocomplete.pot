@@ -1,0 +1,213 @@
+# Copyright (C) 2017 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://www.buddyboss.com/contact/\n"
+"POT-Creation-Date: 2017-02-07 02:45:48+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: BuddyBoss <support@buddyboss.com>\n"
+"Language-Team: BuddyBoss <support@buddyboss.com>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: bp-location-autocomplete.php:76
+msgid "Couldn't load main class at:<br/>%s"
+msgstr ""
+
+#: bp-location-autocomplete.php:80 bp-location-autocomplete.php:112
+msgid "<h1>Fatal error:</h1><hr/><pre>%s</pre>"
+msgstr ""
+
+#: bp-location-autocomplete.php:106
+msgid "Couldn't load BPLA_Plugin_Requirements_Check class at:<br/>%s"
+msgstr ""
+
+#: includes/admin.php:178
+msgid "General Settings"
+msgstr ""
+
+#: includes/admin.php:181
+msgid "Google Maps API key"
+msgstr ""
+
+#: includes/admin.php:182
+msgid "Number of Fields"
+msgstr ""
+
+#: includes/admin.php:217
+msgid "Enable for Profiles"
+msgstr ""
+
+#: includes/admin.php:222
+msgid ""
+"Go to Users > Profile Fields, and create a profile field to be used for "
+"Address. Make sure the field type is a <strong>Text Box</strong>. Then "
+"return here and select your profile field below."
+msgstr ""
+
+#: includes/admin.php:226
+msgid ""
+"Go to Users > Profile Fields, and create profile fields for each location "
+"source you need (State, Postal Code, etc.). Make sure each profile field "
+"type is a <strong>Text Box</strong>. Then return here and select your "
+"profile fields for the sections below."
+msgstr ""
+
+#: includes/admin.php:231 includes/admin.php:292
+msgid "Address"
+msgstr ""
+
+#: includes/admin.php:239 includes/admin.php:308
+msgid "Street Address"
+msgstr ""
+
+#: includes/admin.php:243 includes/admin.php:321
+msgid "City"
+msgstr ""
+
+#: includes/admin.php:247 includes/admin.php:334
+msgid "State/Province"
+msgstr ""
+
+#: includes/admin.php:251
+msgid "ZIP/Postal Code"
+msgstr ""
+
+#: includes/admin.php:255 includes/admin.php:360
+msgid "Country"
+msgstr ""
+
+#: includes/admin.php:270
+msgid "Enable for Groups"
+msgstr ""
+
+#: includes/admin.php:275
+msgid "Add your own title for the Address field, to be used when editing a group."
+msgstr ""
+
+#: includes/admin.php:279
+msgid ""
+"Check all of the location fields you want to enable, and add your own "
+"titles for each field."
+msgstr ""
+
+#: includes/admin.php:347
+msgid "Zip/Postal Code"
+msgstr ""
+
+#: includes/admin.php:366
+msgid "Are group admins required to enter a group address?"
+msgstr ""
+
+#: includes/admin.php:373
+msgid "Address Fields Required"
+msgstr ""
+
+#: includes/admin.php:379
+msgid "A Google Maps API key is <strong>required</strong> to use this plugin."
+msgstr ""
+
+#: includes/admin.php:379
+msgid "Generate your API key"
+msgstr ""
+
+#: includes/admin.php:379
+msgid "and then paste it below."
+msgstr ""
+
+#: includes/admin.php:379
+msgid "Video Tutorial"
+msgstr ""
+
+#: includes/admin.php:384
+msgid "Support"
+msgstr ""
+
+#: includes/admin.php:438
+msgid "Settings saved."
+msgstr ""
+
+#: includes/admin.php:438
+msgid "Dismiss this notice."
+msgstr ""
+
+#: includes/admin.php:443
+msgid "Location Autocomplete for BuddyPress"
+msgstr ""
+
+#: includes/admin.php:449
+msgid "Settings updated."
+msgstr ""
+
+#: includes/admin.php:455
+msgid "Save Changes"
+msgstr ""
+
+#: includes/admin.php:486
+msgid "Settings"
+msgstr ""
+
+#: includes/admin.php:530
+msgid "<strong>Single Address Field</strong>"
+msgstr ""
+
+#: includes/admin.php:531
+msgid "<strong>Multiple Location Fields</strong>"
+msgstr ""
+
+#: includes/bp-location-class.php:27
+msgid "BPLA"
+msgstr ""
+
+#: includes/buddyboss-plugin-updater.php:84
+msgid ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a "
+"href=\"?\" onclick=\"document.location.reload(); return false;\">Try "
+"again</a>"
+msgstr ""
+
+#: includes/buddyboss-plugin-updater.php:88
+msgid "An unknown error occurred"
+msgstr ""
+
+#: includes/help-support.php:5
+msgid "Here are some video tutorials to get you started:"
+msgstr ""
+
+#: includes/help-support.php:13
+msgid "Need more help?"
+msgstr ""
+
+#: includes/help-support.php:16
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: includes/help-support.php:17
+msgid "Current Version &amp; Release Notes"
+msgstr ""
+
+#: includes/help-support.php:18
+msgid "How to Update"
+msgstr ""
+
+#: includes/main-class.php:196 includes/main-class.php:205
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/requirements-class.php:22 includes/requirements-class.php:40
+msgid "Please activate BuddyPress first"
+msgstr ""
