@@ -1,26 +1,26 @@
 body.bd-hide-left-bar #right-panel-inner {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 .page:not(.buddypress) .site-content article:not(.comment) {
-	padding: 0px;
+    padding: 0px;
 }
 
 #item-body,
 .bp-legacy div#item-body,
-.sfwd-courses .learndash {
-	max-width: $container-max-width;
-	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 15px;
-
-	@include media(sm) {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	@include media(md) {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
+.sfwd-courses .learndash,
+.sfwd-lessons .entry-content,
+.sfwd-topic .entry-content {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include media(sm) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include media(md) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
