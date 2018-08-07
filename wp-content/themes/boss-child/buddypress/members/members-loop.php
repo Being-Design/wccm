@@ -13,7 +13,7 @@
 
 <?php if ( bp_get_group_id() ) : 
 
-	if ( bp_group_has_members( bp_ajax_querystring('group_members') ) ) :
+	if ( bp_group_has_members( 'exclude=15' ) ) :
 		
 		do_action( 'bp_before_group_members_content' );
 
@@ -94,7 +94,7 @@ else: ?>
 
 <?php do_action( 'bp_before_members_loop' ); ?>
 
-<?php if ( bp_has_members( bp_ajax_querystring( 'members' ) ) ) : ?>
+<?php if ( bp_has_members('exclude=15') ) : ?>
 
 	<div id="pag-top" class="pagination">
 
