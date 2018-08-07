@@ -125,13 +125,23 @@ function boss_child_theme_scripts_styles()
 add_action( 'wp_enqueue_scripts', 'boss_child_theme_scripts_styles', 9999 );
 
 
+/*
+ * Adds Login form style.
+ */
+function wccm_login_stylesheet() {
+  wp_enqueue_style( 'boss-child-login', get_stylesheet_directory_uri() . '/css/custom-login.css?v=' . time(), array('custom-login') );
+  wp_enqueue_script( 'boss-child-login-scripts', get_stylesheet_directory_uri() . '/js/login-scripts.js?v=' . time(), array( 'jquery' ) );
+}
+add_action( 'login_enqueue_scripts', 'wccm_login_stylesheet' );
+
+
 /**
 **  Override boss-learndash/learndash-buddypress templates
 **/
-function meditatio_override_learndash_buddypress_templates() {
+function wccm_override_learndash_buddypress_templates() {
   return get_stylesheet_directory() . '/boss-learndash';
 }
-add_filter( 'boss_edu_course_group_template_path', 'meditatio_override_learndash_buddypress_templates' );
+add_filter( 'boss_edu_course_group_template_path', 'wccm_override_learndash_buddypress_templates' );
 
 /**
 **  Override WooCommerce dashboard tab title
