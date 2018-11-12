@@ -163,6 +163,13 @@ $logged_in = !empty($user_id);
                         }
                         ?>
                     </div>
+
+                    <?php
+                    $group_id = get_post_meta($course_id, 'bp_course_group', true);
+                    $student_count = get_group_student_count( $group_id ); 
+                    ?> 
+                    <span class="member-count header-count"><?php echo ( $student_count > 1 ) ? $student_count . ' Members' : $student_count . ' Member'; ?></span>
+
                 </section>
 
                 <?php else: ?>

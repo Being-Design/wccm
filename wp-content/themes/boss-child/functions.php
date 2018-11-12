@@ -281,3 +281,26 @@ function custom_override_checkout_fields( $fields ) {
   unset($fields['billing']['billing_phone']);
   return $fields;
 }
+
+
+function get_group_student_count( $group_id ) {
+
+  // calculate number of students
+  $student_count = 0;
+  $has_members_args = array( 
+    'group_id' => $group_id,
+    'per_page' => 1000
+  );
+  if ( bp_group_has_members( $has_members_args ) ) {
+    while ( bp_group_members() ) {
+      bp_group_the_member(); 
+      $group_user = new WP_User( bp_get_member_user_id() ); 
+      if ( !in_array( 'administrator', $group_user->roles) && !in_array( 'group_leader', $group_user->roles) && !in_array( 'observer', $group_user->roles) ) {
+        $student_count++;
+      }
+    }
+  }
+
+  return $student_count;
+  
+}
